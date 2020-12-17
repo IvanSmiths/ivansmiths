@@ -1,0 +1,63 @@
+/*                                   CONTACT ME                */
+/*                                   CONTACT ME                */
+/*                                   CONTACT ME                */
+
+.contact-me-cnt {
+  background-color: var(--color-bg);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 4rem 0rem;
+  transition: var(--speed-one);
+}
+
+.contact-me {
+  text-align: center;
+  grid-column: 1 / 3;
+  display: block;
+  margin: 5rem 0rem;
+}
+
+.contact-me-text-cnt {
+  grid-column: 1 / 2;
+  margin-left: 3rem;
+}
+
+.contact-me-text-cnt h6 {
+  margin-bottom: 2rem;
+}
+
+.contact-me-text-cnt p {
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  grid-column: 2 / 3;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-contact {
+  width: 40vw;
+  margin: 1rem;
+  background-color: var(--color-bg2);
+  padding: 1rem;
+  border-radius: 2rem;
+  transition: var(--speed-one);
+}
+
+.input-message {
+  margin: 1rem;
+  background-color: var(--color-bg2);
+  padding: 1rem;
+  border: none;
+  border-radius: 2rem;
+  resize: none;
+  width: 40vw;
+  transition: var(--speed-one);
+}
+
+.contact-btn {
+  width: 40vw;
+}

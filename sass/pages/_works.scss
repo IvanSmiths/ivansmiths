@@ -1,0 +1,33 @@
+/*                           WORKS BEGIN           */
+/*                           WORKS BEGIN           */
+/*                           WORKS BEGIN           */
+
+.my-works-cnt {
+  background-color: var(--color-bg);
+  transition: var(--speed-one);
+}
+
+.my-works {
+  margin: 8rem 1rem;
+  text-align: center;
+}
+
+.works-cnt {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.work {
+  width: 60vw;
+  height: 20rem;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 3rem;
+  background-color: var(--color-bg2);
+  transition: var(--speed-one);
+}
+
+.work:hover {
+  transform: scale(1.05);
+}

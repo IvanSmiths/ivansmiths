@@ -1,0 +1,33 @@
+/*                           PROJECTS BEGIN           */
+/*                           PROJECTS BEGIN           */
+/*                           PROJECTS BEGIN           */
+
+.my-projects-cnt {
+  background-color: var(--color-bg);
+  transition: var(--speed-one);
+}
+
+.my-projects {
+  margin: 8rem 3rem;
+  text-align: center;
+}
+
+.projects-cnt {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.project {
+  width: 30vw;
+  height: 10rem;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 3rem;
+  background-color: var(--color-bg2);
+  transition: var(--speed-one);
+}
+
+.project:hover {
+  transform: scale(1.05);
+}

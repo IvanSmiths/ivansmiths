@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ivan Smiths's portfolio, frontend developer.</title>
+    <link rel="stylesheet" href="./main.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+  </head>
+  <body class="main-cnt">
+    <div class="loader">
+      <svg
+        class="loading"
+        version="1.1"
+        id="L4"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 100 100"
+        enable-background="new 0 0 0 0"
+        xml:space="preserve"
+      >
+        <circle fill="#315ae0" stroke="none" cx="6" cy="50" r="6">
+          <animate
+            attributeName="opacity"
+            dur="1s"
+            values="0;1;0"
+            repeatCount="indefinite"
+            begin="0.1"
+          />
+        </circle>
+        <circle fill="#315ae0" stroke="none" cx="26" cy="50" r="6">
+          <animate
+            attributeName="opacity"
+            dur="1s"
+            values="0;1;0"
+            repeatCount="indefinite"
+            begin="0.2"
+          />
+        </circle>
+        <circle fill="#315ae0" stroke="none" cx="46" cy="50" r="6">
+          <animate
+            attributeName="opacity"
+            dur="1s"
+            values="0;1;0"
+            repeatCount="indefinite"
+            begin="0.3"
+          />
+        </circle>
+      </svg>
+    </div>
+    <nav>
+      <div class="logo">
+        <img src="./img/logo.svg" alt="Logo Image" />
+      </div>
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+        <li id="header-link" class="lo paragraph-little"></li>
+        <li id="skills-link" class="lo paragraph-little">Skills</li>
+        <li id="about-link" class="lo paragraph-little">About</li>
+        <li id="works-link" class="lo paragraph-little">Works</li>
+        <li id="projects-link" class="lo paragraph-little">Projects</li>
+        <li id="contact-link" class="lo paragraph-little">Contact</li>
+      </ul>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
+    </nav>
+    <header id="header" class="header">
+      <div class="header-text-cnt">
+        <h1 class="title">
+          I can help with your <br />
+          <span
+            class="txt-type"
+            data-wait="3000"
+            data-words='["Frontend", "React", "Node.js", "Mongo DB", "Express"]'
+          ></span>
+          Project.
+        </h1>
+        <p class="paragraph-inverse">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, illum.
+          <br />
+          Aliquid quam amet et voluptate? Ab, numquam aut. Obcaecati magni,
+          <br />
+          laborum aspernatur architecto itaque quas a voluptatibus iste natus
+          voluptate!
+        </p>
+        <button id="contact-button" class="btn-line header-btn">
+          Contact Me
+        </button>
+        <button id="works-button" class="btn work-button">See Works</button>
+      </div>
+      <div class="wrapper">
+        <model-viewer
+          auto-rotate
+          camera-controls
+          class="model"
+          src="./model/Scarecrow.gltf"
+        >
+        </model-viewer>
+      </div>
+      <!--WAVES START-->
+      <!--WAVES START-->
+      <!--WAVES START-->
+
+      <div class="wave-cnt">
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              class="wave-mid-1"
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(255,255,255,0.7)"
+            />
+            <use
+              class="wave-mid-2"
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(255,255,255,0.5)"
+            />
+            <use
+              class="wave-mid-3"
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(255,255,255,0.3)"
+            />
+            <use
+              class="wave-last"
+              id="wave"
+              xlink:href="#gentle-wave"
+              x="48"
+              y="7"
+              fill="rgba(236, 237, 241)"
+            />
+          </g>
+        </svg>
+      </div>
+    </header>
+
+    <!--SKILLS START-->
+    <!--SKILLS START-->
+    <!--SKILLS START-->
+
+    <main id="skills" class="main">
+      <h2 class="h2-title">MY 6 PACK</h2>
+      <section class="card-cnt">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-front">
+              <img
+                class="card-ico card-html"
+                src="./img/html_ico.png"
+                alt="html-ico"
+              />
+            </div>
+            <div class="card-back">
+              <h2 class="h3-title card-body">
+                <span class="paragraph-gray">&lt;h1&gt;</span>SEO Friendly Code
+                is a <strong class="highlight"> MUST! </strong
+                ><span class="paragraph-gray">&lt;/h1&gt;</span>
+              </h2>
+              <p class="paragraph card-body">
+                <span class="paragraph-gray">&lt;p&gt;</span> Search engine's
+                web scraper are always pushing up well coded websites, don't let
+                your drown!<span class="paragraph-gray">&lt;/p&gt;</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-front">
+              <img class="card-ico" src="./img/css_ico.png" alt="css-ico" />
+            </div>
+            <div class="card-back">
+              <p class="card-body h6-title">
+                .new-technologies {<br />
+                <strong class="highlight">Sass, Flexbox and Css grid</strong>,
+                are extremely important, in order to achieve a clean code.
+                <br />
+                };
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-front">
+              <img class="card-ico" src="./img/javascript_ico.png" alt="" />
+            </div>
+            <div class="card-back">
+              <p class="card-body h6-title">
+                myKnowledge () => { <br />
+                console.log('
+                <strong class="highlight">Es6 syntax</strong>, like Arrow
+                functions, new Array like .map, are extremely important, to
+                write scalable code.' <br />
+                };
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-front">
+              <img class="card-ico" src="./img/react_ico.png" alt="" />
+            </div>
+            <div class="card-back">
+              <p class="card-body h6-title">
+                This would be some longer text that gives a description of the
+                things from the other side I guess
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-front">
+              <img class="card-ico" src="./img/nodejs_ico.png" alt="" />
+            </div>
+            <div class="card-back">
+              <p class="card-body h6-title">
+                const express =
+                <strong class="highlight"> require('express'); </strong> <br />
+                const app = express();
+                <br />
+                <span> <br /></span>
+                app.get('/skills', (req, res) => { <br />
+                res.send('I've knoledge about the
+                <strong class="highlight">CRUD operation</strong>, middleware,
+                and <strong class="highlight">basic security. </strong> ');
+                <br />
+                });
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-front">
+              <img class="card-ico" src="./img/mongodb_ico.png" alt="" />
+            </div>
+            <div class="card-back">
+              <p class="card-body h6-title">
+                This would be some longer text that gives a description of the
+                things from the other side I guess
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-front">
+              <img class="card-ico" src="./img/blender_ico.png" alt="" />
+            </div>
+            <div class="card-back">
+              <p class="card-body h6-title">
+                This would be some longer text that gives a description of the
+                things from the other side I guess
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--ABOUT START-->
+    <!--ABOUT START-->
+    <!--ABOUT START-->
+    <svg
+      class="svg-up"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 319"
+    >
+      <path
+        fill="#0099ff"
+        fill-opacity="1"
+        d="M0,64L48,96C96,128,192,192,288,218.7C384,245,480,235,576,213.3C672,192,768,160,864,149.3C960,139,1056,149,1152,144C1248,139,1344,117,1392,106.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
+
+    <section id="about" class="presentation">
+      <div class="pr-h2">
+        <h2 class="h2-title">Myself</h2>
+      </div>
+      <div class="presentation-text-cnt">
+        <h4 class="paragraph-white">Personal Infos:</h4>
+        <section class="presentation-list">
+          <ul>
+            <li class="paragraph-grey">
+              First name: <strong class="paragraph-white"> Ivan</strong>
+            </li>
+            <li class="paragraph-grey">
+              Last name: <strong class="paragraph-white"> Fabbri</strong>
+            </li>
+            <li class="paragraph-grey">
+              Nationality: <strong class="paragraph-white"> Italian</strong>
+            </li>
+            <li class="paragraph-grey">
+              Langusges:
+              <strong class="paragraph-white">
+                Italian,<br />
+                English(B2), German(B1)
+              </strong>
+            </li>
+            <li class="paragraph-grey">
+              Age: <strong class="paragraph-white"> 27</strong>
+            </li>
+          </ul>
+          <ul>
+            <li class="paragraph-grey">
+              Living in: <strong class="paragraph-white"> Wiesbaden</strong>
+            </li>
+            <li class="paragraph-grey">
+              Education:
+              <strong class="paragraph-white">
+                HighSchool of Marketing and Accountability,<br />
+                ENFAP Web Design Course.
+              </strong>
+            </li>
+            <li class="paragraph-grey">
+              Email:
+              <strong class="paragraph-white"> smithsmusic93@gmail.com </strong>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="presentation-sub-cnt">
+        <div class="img-cnt">
+          <img class="img-myself" src="./img/myself_img.jpg" alt="" />
+        </div>
+      </div>
+      <div class="button-cnt">
+        <button class="btn">Download English CV</button> <br />
+        <button class="btn">Download German CV</button> <br />
+        <button class="btn">Download Italian CV</button>
+      </div>
+    </section>
+    <svg
+      class="svg-down"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 319"
+    >
+      <path
+        fill="#0099ff"
+        fill-opacity="1"
+        d="M0,32L30,69.3C60,107,120,181,180,202.7C240,224,300,192,360,176C420,160,480,160,540,186.7C600,213,660,267,720,240C780,213,840,107,900,80C960,53,1020,107,1080,154.7C1140,203,1200,245,1260,261.3C1320,277,1380,267,1410,261.3L1440,256L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+      ></path>
+    </svg>
+
+    <!--WORKS START-->
+    <!--WORKS START-->
+    <!--WORKS START-->
+
+    <section id="works" class="my-works-cnt">
+      <div class="my-works">
+        <h2 class="h2-title">MY WORKS</h2>
+      </div>
+      <div class="works-cnt">
+        <div class="work work-1"></div>
+        <div class="work work-2"></div>
+      </div>
+    </section>
+
+    <!--PROJECTS START-->
+    <!--PROJECTS START-->
+    <!--PROJECTS START-->
+
+    <section id="projects" class="my-projects-cnt">
+      <div class="my-projects">
+        <h2 class="h2-title">MY PROJECTS</h2>
+      </div>
+      <div class="projects-cnt">
+        <div class="project project-1"></div>
+        <div class="project project-2"></div>
+      </div>
+    </section>
+
+    <!--CONTACT START-->
+    <!--CONTACT START-->
+    <!--CONTACT START-->
+
+    <section id="contact" class="contact-me-cnt">
+      <div class="contact-me">
+        <h2 class="h2-title">CONTACT ME</h2>
+      </div>
+      <div class="contact-me-text-cnt">
+        <h6 class="h6-title">LET'S TALK!</h6>
+        <p class="paragraph">
+          Feel free to contact me! I'm always interested in making new projects,
+          or just getting in touch with other passionated people.
+        </p>
+        <h6 class="h6-title">Email: smithsmusic@gmail.com</h6>
+      </div>
+      <form class="contact-form" action="submit">
+        <input class="input-contact" type="text" placeholder="Name..." />
+        <input class="input-contact" type="text" placeholder="Object..." />
+        <input class="input-contact" type="email" placeholder="Email..." />
+        <textarea
+          class="input-message"
+          name="message"
+          id=""
+          placeholder="Message..."
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button type="submit" class="btn contact-btn">Send</button>
+      </form>
+    </section>
+    <script>
+      window.addEventListener('load', function () {
+        const loader = document.querySelector('.loader');
+        loader.className += ' hidden'; // class "loader hidden"
+      });
+    </script>
+    <script src="./script.js"></script>
+    <script src="./three.min.js"></script>
+    <script src="./GLTFLoader.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
