@@ -1,0 +1,3 @@
+<model-viewer src="full.glb" exposure="0.41" environment-image="aircraft_workshop_01_1k.hdr" camera-orbit="-358.5deg 78.8deg 120.8m" poster="poster.png">
+
+</model-viewer>
