@@ -114,6 +114,19 @@
         >
           <div id="error" class="hide">AR is not supported on this device</div>
         </model-viewer>
+        <script>
+          document
+            .querySelector('#model-viewer')
+            .addEventListener('ar-status', (event) => {
+              if (event.detail.status === 'failed') {
+                const error = document.querySelector('#error');
+                error.classList.remove('hide');
+                error.addEventListener('transitionend', (event) => {
+                  error.classList.add('hide');
+                });
+              }
+            });
+        </script>
       </div>
 
       <!--WAVES START-->
@@ -484,7 +497,6 @@
         <button type="submit" class="btn contact-btn">Send</button>
       </form>
     </section>
-    <script src="./script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
@@ -493,5 +505,6 @@
       nomodule
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
     ></script>
+    <script src="./script.js"></script>
   </body>
 </html>
