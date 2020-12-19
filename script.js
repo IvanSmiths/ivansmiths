@@ -1,11 +1,23 @@
-window.addEventListener('load', function () {
-  const loader = document.querySelector('.loader');
-  const shadow = document.querySelector('.shadow');
-  const box = document.querySelector('.box');
-  loader.className += ' hidden';
-  shadow.className += ' hidden';
-  box.className += ' hidden';
-});
+// window.addEventListener('load', function () {
+//   const loader = document.querySelector('.loader');
+//   const shadow = document.querySelector('.shadow');
+//   const box = document.querySelector('.box');
+//   loader.className += ' hidden';
+//   shadow.className += ' hidden';
+//   box.className += ' hidden';
+// });
+
+document
+  .querySelector('#model-viewer')
+  .addEventListener('ar-status', (event) => {
+    if (event.detail.status === 'failed') {
+      const error = document.querySelector('#error');
+      error.classList.remove('hide');
+      error.addEventListener('transitionend', (event) => {
+        error.classList.add('hide');
+      });
+    }
+  });
 
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');

@@ -7,6 +7,26 @@
           box-sizing: border-box;
 }
 
+#error {
+  background-color: #ffffffdd;
+  border-radius: 16px;
+  padding: 16px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#error.hide {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 2s, opacity 1s 1s;
+  transition: visibility 2s, opacity 1s 1s;
+}
+
 body {
   background-color: var(--color-bg);
 }

@@ -33,14 +33,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ivan Smiths's portfolio, developer.</title>
     <link rel="stylesheet" href="./main.css" />
-    <script
-      type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
-    ></script>
   </head>
   <body class="main-cnt">
     <noscript
@@ -51,9 +43,9 @@
         style="display: none; visibility: hidden"
       ></iframe
     ></noscript>
-    <div class="loader">
+    <!-- <div class="loader">
       <span class="box"></span>
-    </div>
+    </div> -->
     <nav>
       <div class="logo">
         <img src="./img/logo.svg" alt="Logo Image" />
@@ -108,9 +100,9 @@
           class="model"
           src="model/full.glb"
           alt="A 3D model of myself."
+          poster="model/poster.png"
           exposure="0.4"
           camera-orbit="-358.5deg 78.8deg 120.8m"
-          poster="model/poster.png"
           camera-controls
           auto-rotate
           auto-rotate-delay="1000"
@@ -118,6 +110,7 @@
           ar-modes="scene-viewer webxr"
           ar-scale="auto"
         >
+          <div id="error" class="hide">AR is not supported on this device</div>
         </model-viewer>
       </div>
 
@@ -490,5 +483,13 @@
       </form>
     </section>
     <script src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
   </body>
 </html>
