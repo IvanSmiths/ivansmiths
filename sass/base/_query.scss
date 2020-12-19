@@ -178,6 +178,16 @@
     margin: 8rem 2rem;
   }
 
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50vh 80vh 1fr;
+  }
+
+  .model-cnt {
+    margin-top: 6rem;
+  }
+
   nav {
     position: fixed;
     z-index: 3;
@@ -261,8 +271,14 @@
     font-size: 55%;
   }
 
-  .header-text-cnt {
-    margin: 9rem 2rem;
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50vh 80vh 1fr;
+  }
+
+  .model-cnt {
+    margin-top: 10rem;
   }
 
   .model-cnt {
