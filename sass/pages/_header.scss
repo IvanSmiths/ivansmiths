@@ -1,104 +1,14 @@
-/*                                        NAVBAR START                                      */
-/*                                        NAVBAR START                                      */
-/*                                        NAVBAR START                                      */
-
-nav {
-  position: fixed;
-  height: 2rem;
-  width: 100%;
-  background-color: transparent;
-  display: flex;
-  z-index: 10;
-  transition: var(--speed-one);
-}
-
-.nav-scrolled {
-  position: fixed;
-  height: 3rem;
-  width: 100%;
-  background-color: var(--color-bg);
-  display: flex;
-  z-index: 10;
-  transition: var(--speed-one);
-  filter: drop-shadow(0px 5px 5px rgba(2, 2, 2, 0.24));
-}
-
-.logo {
-  padding: 1vh 1vw;
-  text-align: center;
-}
-.logo img {
-  height: 5rem;
-  width: 5rem;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  width: 88vw;
-  padding: 0 0.7vw;
-  justify-content: flex-end;
-  align-items: center;
-  text-transform: uppercase;
-  transition: var(--speed-one);
-}
-
-.nav-links li {
-  margin: 0 1vw;
-  position: relative;
-  cursor: pointer;
-}
-
-.links-scrolled {
-  margin: 0 2vw;
-  position: relative;
-  transition: var(--speed-one);
-}
-
-.nav-links li a::before {
-  content: '';
-  display: block;
-  height: 3px;
-  width: 0%;
-  position: absolute;
-  transition: all ease-in-out 250ms;
-  margin: 0 0 0 10%;
-}
-.nav-links li a:hover::before {
-  width: 80%;
-}
-
-.hamburger div {
-  width: 30px;
-  height: 3px;
-  background: var(--color-text-main);
-  margin: 5px;
-  transition: all 0.3s ease;
-}
-.hamburger {
-  display: none;
-}
-
-/*Stying for small screens*/
-
-/*                                    HEADER BEGIN              */
-/*                                    HEADER BEGIN              */
-/*                                    HEADER BEGIN              */
-
 .header {
   background: linear-gradient(
     60deg,
     var(--color-main) 0%,
     var(--color-sec) 100%
   );
-  color: white;
   transition: var(--speed-one);
   display: grid;
+  color: white;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 85vh 1fr;
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 .header-text-cnt {
@@ -121,6 +31,16 @@ nav {
 
 .work-button {
   animation: pulse 2s infinite;
+}
+
+.model-cnt {
+  margin-top: 1rem;
+  grid-column: 2 / 3;
+}
+
+.model {
+  width: 100%;
+  height: 100%;
 }
 
 /*                                    WAVE BEGIN              */
@@ -197,12 +117,4 @@ nav {
 .wave-mid-3 {
   fill: var(--wave-3);
   transition: var(--speed-one);
-}
-
-.wrapper {
-}
-
-.model {
-  width: 100%;
-  height: 100%;
 }

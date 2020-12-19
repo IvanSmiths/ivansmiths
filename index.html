@@ -43,7 +43,6 @@
     ></script>
   </head>
   <body class="main-cnt">
-    <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-T5N5H2D"
@@ -52,7 +51,6 @@
         style="display: none; visibility: hidden"
       ></iframe
     ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <div class="loader">
       <svg
         class="loading"
@@ -143,7 +141,7 @@
         </button>
         <button id="works-button" class="btn work-button">See Works</button>
       </div>
-      <div class="wrapper">
+      <div class="model-cnt">
         <model-viewer
           auto-rotate
           camera-controls
@@ -357,19 +355,19 @@
         <section class="presentation-list">
           <ul>
             <li class="paragraph-grey">
-              First name: <strong class="paragraph-white"> Ivan</strong>
+              First name: <strong class="paragraph-white">Ivan</strong>
             </li>
             <li class="paragraph-grey">
-              Last name: <strong class="paragraph-white"> Fabbri</strong>
+              Last name: <strong class="paragraph-white">Fabbri</strong>
             </li>
             <li class="paragraph-grey">
-              Nationality: <strong class="paragraph-white"> Italian</strong>
+              Nationality: <strong class="paragraph-white">Italian</strong>
             </li>
             <li class="paragraph-grey">
               Langusges:
               <strong class="paragraph-white">
                 Italian,<br />
-                English(B2), German(B1)
+                English B2, German B1
               </strong>
             </li>
             <li class="paragraph-grey">
@@ -378,7 +376,7 @@
           </ul>
           <ul>
             <li class="paragraph-grey">
-              Living in: <strong class="paragraph-white"> Wiesbaden</strong>
+              Living in: <strong class="paragraph-white">Wiesbaden</strong>
             </li>
             <li class="paragraph-grey">
               Education:
@@ -389,7 +387,7 @@
             </li>
             <li class="paragraph-grey">
               Email:
-              <strong class="paragraph-white"> smithsmusic93@gmail.com </strong>
+              <strong class="paragraph-white">info@ivansmiths.com</strong>
             </li>
           </ul>
         </section>
@@ -459,16 +457,35 @@
           Feel free to contact me! I'm always interested in making new projects,
           or just getting in touch with other passionated people.
         </p>
-        <h6 class="h6-title">Email: smithsmusic@gmail.com</h6>
+        <h6 class="h6-title">Email: info@ivansmiths.com</h6>
       </div>
-      <form class="contact-form" action="submit">
-        <input class="input-contact" type="text" placeholder="Name..." />
-        <input class="input-contact" type="text" placeholder="Object..." />
-        <input class="input-contact" type="email" placeholder="Email..." />
+      <form
+        class="contact-form"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+      >
+        <input
+          class="input-contact"
+          type="text"
+          name="name"
+          placeholder="Name..."
+        />
+        <input
+          class="input-contact"
+          type="text"
+          name="object"
+          placeholder="Object..."
+        />
+        <input
+          class="input-contact"
+          type="email"
+          name="email"
+          placeholder="Email..."
+        />
         <textarea
           class="input-message"
           name="message"
-          id=""
           placeholder="Message..."
           cols="30"
           rows="10"
@@ -483,8 +500,5 @@
       });
     </script>
     <script src="./script.js"></script>
-    <script src="./three.min.js"></script>
-    <script src="./GLTFLoader.js"></script>
-    <script src="./app.js"></script>
   </body>
 </html>

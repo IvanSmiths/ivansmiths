@@ -41,6 +41,10 @@
     margin-top: 8rem;
     margin-left: -1rem;
   }
+  .model-cnt {
+    margin: 2rem 0rem;
+    grid-column: 1 / 3;
+  }
 
   .presentation {
     display: grid;
@@ -82,12 +86,6 @@
 @media screen and (max-width: 600px) {
   html {
     font-size: 64%;
-  }
-
-  .header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 45vh 1fr;
   }
 
   .button-cnt {
@@ -162,12 +160,6 @@
 }
 
 @media screen and (max-width: 550px) {
-  .header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 64vh 1fr;
-  }
-
   .header-text-cnt {
     margin: 6rem 2rem;
   }
@@ -255,6 +247,10 @@
 
   .header-text-cnt {
     margin: 9rem 2rem;
+  }
+
+  .model-cnt {
+    margin: 9rem 0rem 5rem 0rem;
   }
 
   nav {
