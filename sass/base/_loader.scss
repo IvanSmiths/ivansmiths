@@ -1,75 +1,15 @@
-.loader {
-  /* Uncomment this to make it run! */
-  /*
-       animation: loader 5s linear infinite; 
-    */
-
+#error {
+  background-color: #ffffffdd;
+  border-radius: 16px;
+  padding: 16px;
   position: absolute;
-  top: calc(50% - 20px);
-  left: calc(50% - 20px);
-  background-color: var(--color-main);
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  transition: opacity 0.3s;
 }
-@keyframes loader {
-  0% {
-    left: -100px;
-  }
-  100% {
-    left: 110%;
-  }
-}
-
-.box {
-  width: 50px;
-  height: 50px;
-  background: #fff;
-  animation: animate 0.5s linear infinite;
-  border-radius: 3px;
-}
-
-@keyframes animate {
-  17% {
-    border-bottom-right-radius: 3px;
-  }
-  25% {
-    transform: translateY(9px) rotate(22.5deg);
-  }
-  50% {
-    transform: translateY(18px) scale(1, 0.9) rotate(45deg);
-    border-bottom-right-radius: 40px;
-  }
-  75% {
-    transform: translateY(9px) rotate(67.5deg);
-  }
-  100% {
-    transform: translateY(0) rotate(90deg);
-  }
-}
-
-.loader.hidden {
-  animation: fadeOut 1s;
-  animation-fill-mode: forwards;
-}
-.shadow.hidden {
-  animation: fadeOut 1s;
-  animation-fill-mode: forwards;
-}
-.box.hidden {
-  animation: fadeOut 1s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeOut {
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
+#error.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 2s, opacity 1s 1s;
 }

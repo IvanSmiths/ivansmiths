@@ -7,26 +7,6 @@
           box-sizing: border-box;
 }
 
-#error {
-  background-color: #ffffffdd;
-  border-radius: 16px;
-  padding: 16px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
-
-#error.hide {
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: visibility 2s, opacity 1s 1s;
-  transition: visibility 2s, opacity 1s 1s;
-}
-
 body {
   background-color: var(--color-bg);
 }
@@ -224,6 +204,44 @@ textarea {
   --color-text-main: #f0f0f0;
   --color-text-sub: #c8c8c8;
   --color-text-inverse: #f3f3f3;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-box-shadow: 0 0 0 0 var(--color-click);
+            box-shadow: 0 0 0 0 var(--color-click);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 15px #38a1dd00;
+            box-shadow: 0 0 0 15px #38a1dd00;
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-box-shadow: 0 0 0 0 var(--color-click);
+            box-shadow: 0 0 0 0 var(--color-click);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 15px #38a1dd00;
+            box-shadow: 0 0 0 15px #38a1dd00;
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
 }
 
 .theme-switch-wrapper {
@@ -589,6 +607,19 @@ nav {
 .card-front,
 .card-back {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 2rem;
   top: 0;
   bottom: 0;
@@ -606,15 +637,6 @@ nav {
 
 .card-front {
   background-color: var(--color-bg2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .card-body {
@@ -635,46 +657,16 @@ nav {
           transform: var(--level-two);
 }
 
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-    -webkit-box-shadow: 0 0 0 0 var(--color-click);
-            box-shadow: 0 0 0 0 var(--color-click);
-  }
-  70% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-box-shadow: 0 0 0 15px #38a1dd00;
-            box-shadow: 0 0 0 15px #38a1dd00;
-  }
-  100% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-    -webkit-box-shadow: 0 0 0 0 var(--color-click);
-            box-shadow: 0 0 0 0 var(--color-click);
-  }
-  70% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-box-shadow: 0 0 0 15px #38a1dd00;
-            box-shadow: 0 0 0 15px #38a1dd00;
-  }
-  100% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-}
-
 .card-html {
   width: 14rem;
+}
+
+.card-react {
+  width: 13rem;
+}
+
+.card-mongodb {
+  width: 13rem;
 }
 
 .presentation {
@@ -962,6 +954,7 @@ nav {
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
   margin-left: 3rem;
+  margin-right: 10rem;
 }
 
 .contact-me-text-cnt h6 {
@@ -983,12 +976,17 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+label {
+  margin: 0rem 1rem;
+  color: #858585;
 }
 
 .input-contact {
@@ -1164,13 +1162,24 @@ nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
   }
   .nav-links li {
     font-size: 1rem;
+  }
+  .presentation-text-cnt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .theme-switch-wrapper {
     margin-left: 3rem;
@@ -1206,15 +1215,27 @@ nav {
     padding: 4rem 0rem;
   }
   .contact-me-text-cnt {
-    text-align: center;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / 3;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
+    text-align: center;
     margin: 0rem 2rem;
     margin-top: 20rem;
+  }
+  .button-cnt {
+    margin: 50rem 0rem 0rem 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .contact-form {
     -ms-grid-column: 1;
@@ -1378,8 +1399,8 @@ nav {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 50vh 80vh 1fr;
-        grid-template-rows: 50vh 80vh 1fr;
+    -ms-grid-rows: 70vh 80vh 1fr;
+        grid-template-rows: 70vh 80vh 1fr;
   }
   .model-cnt {
     margin-top: 10rem;
@@ -1394,7 +1415,7 @@ nav {
     height: 6rem;
   }
   .presentation-text-cnt {
-    margin: 10rem 10rem 2rem 3rem;
+    margin: 1rem 0rem 2rem 3rem;
   }
 }
 
@@ -1403,7 +1424,7 @@ nav {
     font-size: 45%;
   }
   .presentation-text-cnt {
-    margin: 10rem 10rem 0rem 0rem;
+    margin: 1rem 0rem 0rem 0rem;
   }
   nav {
     height: 6rem;
@@ -1416,140 +1437,23 @@ nav {
   }
 }
 
-.loader {
-  /* Uncomment this to make it run! */
-  /*
-       animation: loader 5s linear infinite; 
-    */
+#error {
+  background-color: #ffffffdd;
+  border-radius: 16px;
+  padding: 16px;
   position: absolute;
-  top: calc(50% - 20px);
-  left: calc(50% - 20px);
-  background-color: var(--color-main);
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
-@-webkit-keyframes loader {
-  0% {
-    left: -100px;
-  }
-  100% {
-    left: 110%;
-  }
-}
-
-@keyframes loader {
-  0% {
-    left: -100px;
-  }
-  100% {
-    left: 110%;
-  }
-}
-
-.box {
-  width: 50px;
-  height: 50px;
-  background: #fff;
-  -webkit-animation: animate 0.5s linear infinite;
-          animation: animate 0.5s linear infinite;
-  border-radius: 3px;
-}
-
-@-webkit-keyframes animate {
-  17% {
-    border-bottom-right-radius: 3px;
-  }
-  25% {
-    -webkit-transform: translateY(9px) rotate(22.5deg);
-            transform: translateY(9px) rotate(22.5deg);
-  }
-  50% {
-    -webkit-transform: translateY(18px) scale(1, 0.9) rotate(45deg);
-            transform: translateY(18px) scale(1, 0.9) rotate(45deg);
-    border-bottom-right-radius: 40px;
-  }
-  75% {
-    -webkit-transform: translateY(9px) rotate(67.5deg);
-            transform: translateY(9px) rotate(67.5deg);
-  }
-  100% {
-    -webkit-transform: translateY(0) rotate(90deg);
-            transform: translateY(0) rotate(90deg);
-  }
-}
-
-@keyframes animate {
-  17% {
-    border-bottom-right-radius: 3px;
-  }
-  25% {
-    -webkit-transform: translateY(9px) rotate(22.5deg);
-            transform: translateY(9px) rotate(22.5deg);
-  }
-  50% {
-    -webkit-transform: translateY(18px) scale(1, 0.9) rotate(45deg);
-            transform: translateY(18px) scale(1, 0.9) rotate(45deg);
-    border-bottom-right-radius: 40px;
-  }
-  75% {
-    -webkit-transform: translateY(9px) rotate(67.5deg);
-            transform: translateY(9px) rotate(67.5deg);
-  }
-  100% {
-    -webkit-transform: translateY(0) rotate(90deg);
-            transform: translateY(0) rotate(90deg);
-  }
-}
-
-.loader.hidden {
-  -webkit-animation: fadeOut 1s;
-          animation: fadeOut 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.shadow.hidden {
-  -webkit-animation: fadeOut 1s;
-          animation: fadeOut 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.box.hidden {
-  -webkit-animation: fadeOut 1s;
-          animation: fadeOut 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes fadeOut {
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-@keyframes fadeOut {
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
+#error.hide {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 2s, opacity 1s 1s;
+  transition: visibility 2s, opacity 1s 1s;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
@@ -14,8 +13,6 @@
         f.parentNode.insertBefore(j, f);
       })(window, document, 'script', 'dataLayer', 'GTM-T5N5H2D');
     </script>
-    <!-- End Google Tag Manager -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-8E1547VSGZ"
@@ -32,6 +29,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ivan Smiths's portfolio, developer.</title>
+    <meta
+      name="description"
+      content="Developer with knowledge of React, Node, MongoDB, Blender, 3D Modeling, Augmented Reality and many more. Wanna work on something? Contact me!"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body class="main-cnt">
@@ -43,9 +45,6 @@
         style="display: none; visibility: hidden"
       ></iframe
     ></noscript>
-    <!-- <div class="loader">
-      <span class="box"></span>
-    </div> -->
     <nav>
       <div class="logo">
         <img src="./img/logo.svg" alt="Logo Image" />
@@ -249,7 +248,11 @@
         <div class="card">
           <div class="card-content">
             <div class="card-front">
-              <img class="card-ico" src="./img/react_ico.png" alt="" />
+              <img
+                class="card-ico card-react"
+                src="./img/react_ico.png"
+                alt=""
+              />
             </div>
             <div class="card-back">
               <p class="card-body h6-title">
@@ -279,7 +282,11 @@
         <div class="card">
           <div class="card-content">
             <div class="card-front">
-              <img class="card-ico" src="./img/mongodb_ico.png" alt="" />
+              <img
+                class="card-ico card-mongodb"
+                src="./img/mongodb_ico.png"
+                alt=""
+              />
             </div>
             <div class="card-back">
               <p class="card-body h6-title">
@@ -469,28 +476,40 @@
         method="POST"
         data-netlify="true"
       >
+        <label for="name">Name</label>
         <input
+          required="true"
           class="input-contact"
           type="text"
           name="name"
-          placeholder="Name..."
+          placeholder="Your Name..."
+          minlength="3"
+          maxlength="20"
         />
+        <label for="name">Object</label>
         <input
+          minlength="3"
+          maxlength="30"
+          required="true"
           class="input-contact"
           type="text"
           name="object"
-          placeholder="Object..."
+          placeholder="Your Object..."
         />
+        <label for="name">Email</label>
         <input
+          required="true"
           class="input-contact"
           type="email"
           name="email"
-          placeholder="Email..."
+          placeholder="Your Email..."
         />
+        <label for="name">Message</label>
         <textarea
+          required="true"
           class="input-message"
           name="message"
-          placeholder="Message..."
+          placeholder="Your Message..."
           cols="30"
           rows="10"
         ></textarea>

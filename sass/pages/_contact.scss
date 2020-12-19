@@ -16,6 +16,7 @@
 .contact-me-text-cnt {
   grid-column: 1 / 2;
   margin-left: 3rem;
+  margin-right: 10rem;
 }
 
 .contact-me-text-cnt h6 {
@@ -30,8 +31,13 @@
   grid-column: 2 / 3;
   display: flex;
   flex-flow: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+label {
+  margin: 0rem 1rem;
+  color: rgb(133, 133, 133);
 }
 
 .input-contact {

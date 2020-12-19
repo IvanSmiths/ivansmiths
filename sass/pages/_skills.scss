@@ -41,6 +41,10 @@
 .card-front,
 .card-back {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   border-radius: 2rem;
   top: 0;
   bottom: 0;
@@ -55,9 +59,6 @@
 
 .card-front {
   background-color: var(--color-bg2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .card-body {
@@ -75,22 +76,14 @@
   transform: var(--level-two);
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(0.9);
-    box-shadow: 0 0 0 0 var(--color-click);
-  }
-
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 15px #38a1dd00;
-  }
-
-  100% {
-    transform: scale(0.9);
-  }
-}
-
 .card-html {
   width: 14rem;
+}
+
+.card-react {
+  width: 13rem;
+}
+
+.card-mongodb {
+  width: 13rem;
 }

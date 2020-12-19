@@ -1,0 +1,15 @@
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 var(--color-click);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 15px #38a1dd00;
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
