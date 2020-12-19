@@ -1,3 +1,12 @@
+window.addEventListener('load', function () {
+  const loader = document.querySelector('.loader');
+  const shadow = document.querySelector('.shadow');
+  const box = document.querySelector('.box');
+  loader.className += ' hidden';
+  shadow.className += ' hidden';
+  box.className += ' hidden';
+});
+
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
@@ -159,8 +168,6 @@ contactBtn.addEventListener('click', () => {
 });
 
 //                  TOGGLE BEGIN
-//                  TOGGLE BEGIN
-//                  TOGGLE BEGIN
 
 const wave = document.querySelector('#wave');
 
@@ -191,28 +198,28 @@ function switchTheme(e) {
 
 toggleSwitch.addEventListener('change', switchTheme, false);
 
-const nav = document.querySelector('nav');
-const navLink = document.querySelector('.nav-links');
-const sectionOne = document.querySelector('.header');
+// const nav = document.querySelector('nav');
+// const navLink = document.querySelector('.nav-links');
+// const sectionOne = document.querySelector('.header');
 
-const sectionOneOptions = {
-  rootMargin: '-200px 0px 0px 0px',
-};
+// const sectionOneOptions = {
+//   rootMargin: '-200px 0px 0px 0px',
+// };
 
-const sectionOneObserver = new IntersectionObserver(function (
-  entries,
-  sectionOneObserver
-) {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      nav.classList.add('nav-scrolled');
-      navLink.classList.add('links-scrolled');
-    } else {
-      nav.classList.remove('nav-scrolled');
-      navLinks.classList.remove('links-scrolled');
-    }
-  });
-},
-sectionOneOptions);
+// const sectionOneObserver = new IntersectionObserver(function (
+//   entries,
+//   sectionOneObserver
+// ) {
+//   entries.forEach((entry) => {
+//     if (!entry.isIntersecting) {
+//       nav.classList.add('nav-scrolled');
+//       navLink.classList.add('links-scrolled');
+//     } else {
+//       nav.classList.remove('nav-scrolled');
+//       navLinks.classList.remove('links-scrolled');
+//     }
+//   });
+// },
+// sectionOneOptions);
 
-sectionOneObserver.observe(sectionOne);
+// sectionOneObserver.observe(sectionOne);
