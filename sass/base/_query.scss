@@ -16,6 +16,10 @@
     margin-left: -10rem;
     margin-top: 15rem;
   }
+
+  .waves-about {
+    margin-top: -8rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -281,6 +285,9 @@
 
   .nav-scrolled {
     height: 8rem;
+  }
+  .waves-about {
+    margin-top: -10rem;
   }
 }
 
