@@ -31,7 +31,7 @@
     <title>Ivan Smiths's portfolio, developer.</title>
     <meta
       name="description"
-      content="Developer with knowledge of React, Node, MongoDB, Blender, 3D Modeling, Augmented Reality and many more. Wanna work on something? Contact me!"
+      content="Developer's portfolio with knowledge of React, Node, MongoDB, Blender, 3D Modeling, Augmented Reality and many more. Wanna work on something? Contact me!"
     />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="stylesheet" href="./main.css" />
@@ -71,20 +71,29 @@
     </nav>
     <header id="header" class="header">
       <div class="ico-cnt">
-        <a href="https://www.instagram.com/ivan_smiths/"
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.instagram.com/ivan_smiths/"
           ><img
             class="ico-social"
             src="./img/instagram-ico.png"
             alt="instagram-ico"
         /></a>
-        <a href="https://twitter.com/IvanSmiths"
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://twitter.com/IvanSmiths"
           ><img
             class="ico-social"
             src="./img/twitter-ico.png"
             alt="twitter-ico"
             fill="white"
         /></a>
-        <a href="https://github.com/IvanSmiths"
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/IvanSmiths"
           ><img
             class="ico-social"
             src="./img/github-ico.png"
@@ -94,21 +103,19 @@
       </div>
       <div class="header-text-cnt">
         <h1 class="title">
-          I can help with your <br />
+          Stuck with your <br />
           <span
             class="txt-type"
             data-wait="3000"
-            data-words='["Frontend", "React", "Node.js", "Mongo DB", "Express"]'
+            data-words='["Frontend", "React", "AR", "Node", "MongoDB", "Express", "JavaScript"]'
           ></span>
-          Project.
+          Project? I can help YOU!
         </h1>
         <p class="paragraph-inverse">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, illum.
+          Ivan Smiths here. Web developer with intermediate frontend skills
           <br />
-          Aliquid quam amet et voluptate? Ab, numquam aut. Obcaecati magni,
-          <br />
-          laborum aspernatur architecto itaque quas a voluptatibus iste natus
-          voluptate!
+          and basics of backend. Passionated of 3D, i always try to blend my two
+          passions.
         </p>
         <button id="contact-button" class="btn-line header-btn">
           Contact Me
@@ -137,7 +144,7 @@
         </model-viewer>
         <script>
           document
-            .querySelector('#model-viewer')
+            .querySelector('model-viewer')
             .addEventListener('ar-status', (event) => {
               if (event.detail.status === 'failed') {
                 const error = document.querySelector('#error');
@@ -170,34 +177,15 @@
             />
           </defs>
           <g class="parallax">
-            <use
-              class="wave-mid-1"
-              xlink:href="#gentle-wave"
-              x="48"
-              y="0"
-              fill="rgba(255,255,255,0.7)"
-            />
-            <use
-              class="wave-mid-2"
-              xlink:href="#gentle-wave"
-              x="48"
-              y="3"
-              fill="rgba(255,255,255,0.5)"
-            />
-            <use
-              class="wave-mid-3"
-              xlink:href="#gentle-wave"
-              x="48"
-              y="5"
-              fill="rgba(255,255,255,0.3)"
-            />
+            <use class="wave-mid-1" xlink:href="#gentle-wave" x="48" y="0" />
+            <use class="wave-mid-2" xlink:href="#gentle-wave" x="48" y="3" />
+            <use class="wave-mid-3" xlink:href="#gentle-wave" x="48" y="5" />
             <use
               class="wave-last"
               id="wave"
               xlink:href="#gentle-wave"
               x="48"
               y="7"
-              fill="rgba(236, 237, 241)"
             />
           </g>
         </svg>
@@ -479,6 +467,7 @@
       <div class="contact-me">
         <h6 class="h2-title">CONTACT ME</h6>
       </div>
+
       <div class="contact-me-text-cnt">
         <p class="h6-title">LET'S TALK!</p>
         <p class="paragraph">
@@ -486,7 +475,37 @@
           in touch, feel free to say hi!
         </p>
         <h6 class="h6-title">Email: info@ivansmiths.com</h6>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.instagram.com/ivan_smiths/"
+          ><img
+            class="ico-social ico-2"
+            src="./img/instagram-ico.png"
+            alt="instagram-ico"
+        /></a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://twitter.com/IvanSmiths"
+          ><img
+            class="ico-social ico-2"
+            src="./img/twitter-ico.png"
+            alt="twitter-ico"
+            fill="white"
+        /></a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/IvanSmiths"
+          ><img
+            class="ico-social ico-2"
+            src="./img/github-ico.png"
+            fill="white"
+            alt="github-ico"
+        /></a>
       </div>
+
       <form
         class="contact-form"
         name="contact"

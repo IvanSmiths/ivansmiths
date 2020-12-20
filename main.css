@@ -392,8 +392,9 @@ nav {
   color: white;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 85vh 1fr;
-      grid-template-rows: 85vh 1fr;
+  -ms-grid-rows: fit-content fit-content;
+      grid-template-rows: -webkit-fit-content -webkit-fit-content;
+      grid-template-rows: fit-content fit-content;
 }
 
 .ico-cnt {
@@ -419,6 +420,10 @@ nav {
   width: 1.4rem;
 }
 
+.ico-2 {
+  margin: 0.4rem 0.7rem 3rem 0rem;
+}
+
 .ico-cnt a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -430,7 +435,7 @@ nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
-  margin-top: 12rem;
+  margin-top: 10rem;
   margin-left: 9rem;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;

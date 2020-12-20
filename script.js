@@ -197,29 +197,3 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
-
-// const nav = document.querySelector('nav');
-// const navLink = document.querySelector('.nav-links');
-// const sectionOne = document.querySelector('.header');
-
-// const sectionOneOptions = {
-//   rootMargin: '-200px 0px 0px 0px',
-// };
-
-// const sectionOneObserver = new IntersectionObserver(function (
-//   entries,
-//   sectionOneObserver
-// ) {
-//   entries.forEach((entry) => {
-//     if (!entry.isIntersecting) {
-//       nav.classList.add('nav-scrolled');
-//       navLink.classList.add('links-scrolled');
-//     } else {
-//       nav.classList.remove('nav-scrolled');
-//       navLinks.classList.remove('links-scrolled');
-//     }
-//   });
-// },
-// sectionOneOptions);
-
-// sectionOneObserver.observe(sectionOne);
