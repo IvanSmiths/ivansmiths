@@ -435,8 +435,7 @@ nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
-  margin-top: 10rem;
-  margin-left: 9rem;
+  margin: 10rem 0rem 3rem 9rem;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
@@ -1069,17 +1068,6 @@ label {
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
   }
-  .header-text-cnt {
-    z-index: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
-    margin-top: 8rem;
-    margin-left: 9rem;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
-  }
   .img-cnt {
     margin-left: -7rem;
     margin-top: 15rem;
@@ -1108,8 +1096,8 @@ label {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 50vh 50vh 1fr;
-        grid-template-rows: 50vh 50vh 1fr;
+    -ms-grid-rows: minmax(27rem, 50vh) 50vh 1fr;
+        grid-template-rows: minmax(27rem, 50vh) 50vh 1fr;
   }
   .header-text-cnt {
     -ms-grid-row: 1;
@@ -1294,15 +1282,15 @@ label {
 
 @media screen and (max-width: 550px) {
   .header-text-cnt {
-    margin: 8rem 2rem;
+    margin: 13rem 2rem;
   }
   .header {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 60vh 80vh 1fr;
-        grid-template-rows: 60vh 80vh 1fr;
+    -ms-grid-rows: minmax(34rem, 55vh) 80vh 1fr;
+        grid-template-rows: minmax(34rem, 55vh) 80vh 1fr;
   }
   .model-cnt {
     margin-top: 6rem;
@@ -1346,7 +1334,7 @@ label {
     pointer-events: none;
   }
   .nav-links.open {
-    clip-path: circle(800px at 90% -10%);
+    clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
     background: var(--color-nav-open);
     pointer-events: all;
@@ -1384,14 +1372,6 @@ label {
   html {
     font-size: 55%;
   }
-  .header {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 60vh 80vh 1fr;
-        grid-template-rows: 60vh 80vh 1fr;
-  }
   .model-cnt {
     margin-top: 10rem;
   }
@@ -1408,7 +1388,7 @@ label {
 
 @media screen and (max-width: 238px) {
   html {
-    font-size: 45%;
+    font-size: 40%;
   }
   .presentation-text-cnt {
     margin: 1rem 0rem 0rem 0rem;

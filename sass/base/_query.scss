@@ -11,14 +11,6 @@
     grid-row: 1 / 2;
   }
 
-  .header-text-cnt {
-    z-index: 3;
-    grid-column: 1 / 2;
-    margin-top: 8rem;
-    margin-left: 9rem;
-    grid-row: 1 / 2;
-  }
-
   .img-cnt {
     margin-left: -7rem;
     margin-top: 15rem;
@@ -48,7 +40,7 @@
   .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50vh 50vh 1fr;
+    grid-template-rows: minmax(27rem, 50vh) 50vh 1fr;
   }
 
   .header-text-cnt {
@@ -187,13 +179,13 @@
 
 @media screen and (max-width: 550px) {
   .header-text-cnt {
-    margin: 8rem 2rem;
+    margin: 13rem 2rem;
   }
 
   .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60vh 80vh 1fr;
+    grid-template-rows: minmax(34rem, 55vh) 80vh 1fr;
   }
 
   .model-cnt {
@@ -229,7 +221,7 @@
     pointer-events: none;
   }
   .nav-links.open {
-    clip-path: circle(800px at 90% -10%);
+    clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
     background: var(--color-nav-open);
     pointer-events: all;
@@ -263,12 +255,6 @@
     font-size: 55%;
   }
 
-  .header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60vh 80vh 1fr;
-  }
-
   .model-cnt {
     margin-top: 10rem;
   }
@@ -288,7 +274,7 @@
 
 @media screen and (max-width: 238px) {
   html {
-    font-size: 45%;
+    font-size: 40%;
   }
 
   .presentation-text-cnt {
