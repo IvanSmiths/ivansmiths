@@ -11,11 +11,29 @@
   grid-template-rows: 85vh 1fr;
 }
 
+.ico-cnt {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  margin-top: 6rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ico-social {
+  margin: 0.2rem 0rem;
+  width: 1.4rem;
+}
+
+.ico-cnt a {
+  width: fit-content;
+}
+
 .header-text-cnt {
   z-index: 3;
   grid-column: 1 / 2;
   margin-top: 12rem;
-  margin-left: 5rem;
+  margin-left: 9rem;
   grid-row: 1 / 2;
 }
 

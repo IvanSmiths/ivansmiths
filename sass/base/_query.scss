@@ -2,6 +2,23 @@
   html {
     font-size: 92%;
   }
+
+  .header-text-cnt {
+    z-index: 3;
+    grid-column: 1 / 2;
+    margin-top: 8rem;
+    margin-left: 9rem;
+    grid-row: 1 / 2;
+  }
+
+  .header-text-cnt {
+    z-index: 3;
+    grid-column: 1 / 2;
+    margin-top: 8rem;
+    margin-left: 9rem;
+    grid-row: 1 / 2;
+  }
+
   .img-cnt {
     margin-left: -7rem;
     margin-top: 15rem;
@@ -12,6 +29,7 @@
   html {
     font-size: 82%;
   }
+
   .img-cnt {
     margin-left: -10rem;
     margin-top: 15rem;
@@ -40,6 +58,7 @@
     margin-top: 8rem;
     margin-left: -1rem;
   }
+
   .model-cnt {
     margin: 2rem 0rem;
     grid-column: 1 / 3;
@@ -80,6 +99,10 @@
 @media screen and (max-width: 600px) {
   html {
     font-size: 64%;
+  }
+
+  .ico-cnt {
+    display: none;
   }
 
   .header-text-cnt {
