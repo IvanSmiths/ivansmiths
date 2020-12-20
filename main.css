@@ -47,7 +47,7 @@ ul {
 .paragraph {
   font-size: var(--p-size);
   color: var(--color-text-main);
-  line-height: 1.4rem;
+  line-height: 1.6rem;
   -webkit-transition: var(--speed-one);
   transition: var(--speed-one);
 }
@@ -55,7 +55,7 @@ ul {
 .paragraph-sub {
   font-size: var(--p-size);
   color: var(--color-text-sub);
-  line-height: 1.4rem;
+  line-height: 1.6rem;
   -webkit-transition: var(--speed-one);
   transition: var(--speed-one);
 }
@@ -63,7 +63,7 @@ ul {
 .paragraph-inverse {
   font-size: var(--p-size);
   color: var(--color-text-inverse);
-  line-height: 1.4rem;
+  line-height: 1.6rem;
   -webkit-transition: var(--speed-one);
   transition: var(--speed-one);
 }
@@ -71,7 +71,7 @@ ul {
 .paragraph-white {
   font-size: var(--p-size);
   color: var(--color-text-white);
-  line-height: 1.4rem;
+  line-height: 1.6rem;
   -webkit-transition: var(--speed-one);
   transition: var(--speed-one);
 }
@@ -675,8 +675,9 @@ nav {
   display: grid;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
-  -ms-grid-rows: 5rem 1rem 1fr 10rem;
-      grid-template-rows: 5rem 1rem 1fr 10rem;
+  -ms-grid-rows: fit-content 1rem 1fr 10rem;
+      grid-template-rows: -webkit-fit-content 1rem 1fr 10rem;
+      grid-template-rows: fit-content 1rem 1fr 10rem;
   -webkit-transition: var(--speed-one);
   transition: var(--speed-one);
 }
@@ -748,11 +749,15 @@ nav {
   grid-column: 1 / 3;
   text-align: center;
   text-transform: uppercase;
-  margin: 1rem 3rem;
+  margin: 2rem 3rem;
 }
 
-.pr-h2 h2 {
+.pr-h2 h3 {
   color: var(--color-text-white);
+}
+
+.presentation-info {
+  padding: 2rem 0rem;
 }
 
 .presentation-text-cnt {
@@ -762,10 +767,10 @@ nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
-  margin: 10rem 10rem 2rem 5rem;
+  margin: 1rem 10rem 0rem 5rem;
 }
 
-.presentation-text-cnt h4 {
+.presentation-info {
   margin: 1rem;
   font-size: var(--h6-size);
 }
@@ -1095,27 +1100,6 @@ label {
     grid-column: 1 / 3;
     margin: 10rem 10rem 2rem 5rem;
   }
-  .button-cnt {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2 / 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1 / 3;
-    margin-top: 30rem;
-    margin-bottom: 2rem;
-    z-index: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-  }
   .presentation-sub-cnt {
     background-color: var(--color-main);
     -ms-grid-column: 1;
@@ -1146,23 +1130,6 @@ label {
   .header-text-cnt {
     margin-top: 12rem;
   }
-  .button-cnt {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2 / 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1 / 3;
-    margin-top: 40rem;
-    margin-bottom: 2rem;
-    z-index: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .nav-links li {
     font-size: 1rem;
   }
@@ -1180,6 +1147,7 @@ label {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 9rem 0rem 3rem 0rem;
   }
   .theme-switch-wrapper {
     margin-left: 3rem;
@@ -1224,18 +1192,6 @@ label {
     text-align: center;
     margin: 0rem 2rem;
     margin-top: 20rem;
-  }
-  .button-cnt {
-    margin: 50rem 0rem 0rem 0rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .contact-form {
     -ms-grid-column: 1;
@@ -1286,8 +1242,8 @@ label {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 50vh 80vh 1fr;
-        grid-template-rows: 50vh 80vh 1fr;
+    -ms-grid-rows: 60vh 80vh 1fr;
+        grid-template-rows: 60vh 80vh 1fr;
   }
   .model-cnt {
     margin-top: 6rem;
@@ -1315,7 +1271,6 @@ label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    list-style: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
@@ -1324,7 +1279,6 @@ label {
         -ms-flex-pack: center;
             justify-content: center;
     background: var(--color-bg);
-    height: 100vh;
     width: 100%;
     clip-path: circle(50px at 90% -20%);
     -webkit-clip-path: circle(50px at 90% -10%);
@@ -1333,7 +1287,7 @@ label {
     pointer-events: none;
   }
   .nav-links.open {
-    clip-path: circle(1000px at 90% -10%);
+    clip-path: circle(800px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
     background: var(--color-nav-open);
     pointer-events: all;
@@ -1343,31 +1297,8 @@ label {
     margin-bottom: 8rem;
     font-size: 2.5rem;
     font-weight: 400;
-  }
-  .nav-links li:nth-child(1) {
-    -webkit-transition: all 0.5s ease 0.2s;
-    transition: all 0.5s ease 0.2s;
-  }
-  .nav-links li:nth-child(2) {
-    -webkit-transition: all 0.5s ease 0.4s;
-    transition: all 0.5s ease 0.4s;
-  }
-  .nav-links li:nth-child(3) {
-    -webkit-transition: all 0.5s ease 0.6s;
-    transition: all 0.5s ease 0.6s;
-  }
-  .nav-links li:nth-child(4) {
-    -webkit-transition: all 0.5s ease 0.7s;
-    transition: all 0.5s ease 0.7s;
-  }
-  .nav-links li:nth-child(5) {
-    -webkit-transition: all 0.5s ease 0.8s;
-    transition: all 0.5s ease 0.8s;
-  }
-  .nav-links li:nth-child(6) {
-    -webkit-transition: all 0.5s ease 0.9s;
-    transition: all 0.5s ease 0.9s;
-    margin: 0;
+    -webkit-transition: 1.5s ease-in-out;
+    transition: 1.5s ease-in-out;
   }
   li.fade {
     opacity: 1;
@@ -1399,8 +1330,8 @@ label {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 70vh 80vh 1fr;
-        grid-template-rows: 70vh 80vh 1fr;
+    -ms-grid-rows: 60vh 80vh 1fr;
+        grid-template-rows: 60vh 80vh 1fr;
   }
   .model-cnt {
     margin-top: 10rem;
@@ -1410,9 +1341,6 @@ label {
   }
   nav {
     height: 4rem;
-  }
-  .nav-scrolled {
-    height: 6rem;
   }
   .presentation-text-cnt {
     margin: 1rem 0rem 2rem 3rem;
@@ -1428,9 +1356,6 @@ label {
   }
   nav {
     height: 6rem;
-  }
-  .nav-scrolled {
-    height: 8rem;
   }
   .waves-about {
     margin-top: -10rem;

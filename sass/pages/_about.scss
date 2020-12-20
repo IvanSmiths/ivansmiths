@@ -2,7 +2,7 @@
   background-color: var(--color-main);
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 5rem 1rem 1fr 10rem;
+  grid-template-rows: fit-content 1rem 1fr 10rem;
   transition: var(--speed-one);
 }
 
@@ -57,20 +57,24 @@
   grid-column: 1 / 3;
   text-align: center;
   text-transform: uppercase;
-  margin: 1rem 3rem;
+  margin: 2rem 3rem;
 }
 
-.pr-h2 h2 {
+.pr-h2 h3 {
   color: var(--color-text-white);
+}
+
+.presentation-info {
+  padding: 2rem 0rem;
 }
 
 .presentation-text-cnt {
   grid-row: 3 / 4;
   grid-column: 1 / 2;
-  margin: 10rem 10rem 2rem 5rem;
+  margin: 1rem 10rem 0rem 5rem;
 }
 
-.presentation-text-cnt h4 {
+.presentation-info {
   margin: 1rem;
   font-size: var(--h6-size);
 }
