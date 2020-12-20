@@ -1,12 +1,3 @@
-// window.addEventListener('load', function () {
-//   const loader = document.querySelector('.loader');
-//   const shadow = document.querySelector('.shadow');
-//   const box = document.querySelector('.box');
-//   loader.className += ' hidden';
-//   shadow.className += ' hidden';
-//   box.className += ' hidden';
-// });
-
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
