@@ -355,21 +355,6 @@ nav {
   cursor: pointer;
 }
 
-.nav-links li a::before {
-  content: '';
-  display: block;
-  height: 3px;
-  width: 0%;
-  position: absolute;
-  -webkit-transition: all ease-in-out 250ms;
-  transition: all ease-in-out 250ms;
-  margin: 0 0 0 10%;
-}
-
-.nav-links li a:hover::before {
-  width: 80%;
-}
-
 .hamburger div {
   width: 30px;
   height: 3px;
@@ -397,31 +382,18 @@ nav {
       grid-template-rows: fit-content fit-content;
 }
 
-.ico-cnt {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  margin-top: 6rem;
-  margin-left: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.ico-social {
-  margin: 0.2rem 0rem;
-  width: 1.4rem;
-}
-
 .ico-2 {
+  width: 2.3rem;
   margin: 0.4rem 0.7rem 3rem 0rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.ico-2:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transform: rotateY(360);
+          transform: rotateY(360);
 }
 
 .ico-cnt a {
@@ -686,20 +658,24 @@ nav {
 
 .card-ico {
   width: 10rem;
+  height: auto;
   -webkit-transform: var(--level-two);
           transform: var(--level-two);
 }
 
 .card-html {
   width: 14rem;
+  height: auto;
 }
 
 .card-react {
   width: 13rem;
+  height: auto;
 }
 
 .card-mongodb {
   width: 13rem;
+  height: auto;
 }
 
 .presentation {
@@ -1050,6 +1026,8 @@ label {
 }
 
 .contact-btn {
+  margin: 1rem;
+  padding: 1rem;
   width: 40vw;
 }
 
@@ -1267,6 +1245,9 @@ label {
   .input-message {
     width: 70vw;
   }
+  .contact-btn {
+    width: 70vw;
+  }
   .contact-me {
     text-align: center;
     -ms-grid-column: 1;
@@ -1294,6 +1275,9 @@ label {
   }
   .model-cnt {
     margin-top: 6rem;
+  }
+  .waves-about {
+    margin-top: -9rem;
   }
   nav {
     position: fixed;
@@ -1381,23 +1365,17 @@ label {
   nav {
     height: 4rem;
   }
-  .presentation-text-cnt {
-    margin: 1rem 0rem 2rem 3rem;
-  }
 }
 
 @media screen and (max-width: 238px) {
   html {
     font-size: 40%;
   }
-  .presentation-text-cnt {
-    margin: 1rem 0rem 0rem 0rem;
-  }
   nav {
     height: 6rem;
   }
   .waves-about {
-    margin-top: -10rem;
+    margin-top: -19rem;
   }
 }
 
