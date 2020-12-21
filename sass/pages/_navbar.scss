@@ -6,7 +6,8 @@
 }
 
 .nav {
-  height: 4rem;
+  height: 3rem;
+  transition: var(--speed-one);
 }
 
 .header-nav {
@@ -18,8 +19,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: var(--speed-one);
 
-  &__logo {
+  &-logo {
     display: block;
     cursor: pointer;
   }
@@ -29,7 +31,7 @@
   cursor: pointer;
 }
 
-.nav__img {
+.nav-img {
   opacity: 1;
 }
 
@@ -37,15 +39,14 @@
   opacity: 1;
 }
 
-.header__toggle {
-  font-size: 3.5rem;
+.header-toggle {
   opacity: 0;
 }
 
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
-  margin-right: 1rem;
+  margin-left: 10rem;
 }
 
 .theme-switch {
