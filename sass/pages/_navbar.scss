@@ -1,9 +1,8 @@
 .bd-grid {
-  max-width: 1024px;
-  display: grid;
-  grid-template-columns: 100%;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
 }
 
 .nav {
@@ -28,6 +27,14 @@
 
 .logo {
   cursor: pointer;
+}
+
+.nav__img {
+  opacity: 1;
+}
+
+.img-nav {
+  opacity: 1;
 }
 
 .header__toggle {
