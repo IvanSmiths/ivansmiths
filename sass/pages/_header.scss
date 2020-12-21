@@ -11,21 +11,6 @@
   grid-template-rows: fit-content fit-content;
 }
 
-.ico-2 {
-  width: 2.3rem;
-  margin: 0.4rem 0.7rem 3rem 0rem;
-  transition: 0.4s;
-}
-
-.ico-2:hover {
-  transform: scale(1.1);
-  transform: rotateY(360);
-}
-
-.ico-cnt a {
-  width: fit-content;
-}
-
 .header-text-cnt {
   z-index: 3;
   grid-column: 1 / 2;

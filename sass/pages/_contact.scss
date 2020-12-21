@@ -19,7 +19,7 @@
   margin-right: 10rem;
 }
 
-.contact-me-text-cnt h6 {
+.contact-me-text-cnt h3 {
   margin-bottom: 2rem;
 }
 
@@ -64,4 +64,19 @@ label {
   margin: 1rem;
   padding: 1rem;
   width: 40vw;
+}
+
+.ico-2 {
+  width: 1.8rem;
+  margin: 0.4rem 0.7rem 3rem 0rem;
+  transition: 0.4s;
+}
+
+.ico-2:hover {
+  transform: scale(1.1);
+  transform: rotateY(360);
+}
+
+.ico-cnt a {
+  width: fit-content;
 }

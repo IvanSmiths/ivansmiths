@@ -35,6 +35,10 @@
   cursor: pointer;
 }
 
+.header-logo {
+  height: 2rem;
+}
+
 .nav-img {
   opacity: 1;
 }
@@ -54,6 +58,7 @@
 .ico-nav {
   margin: 0rem 0.4rem;
   height: 26px;
+  opacity: 0;
 }
 
 .theme-switch-wrapper {
