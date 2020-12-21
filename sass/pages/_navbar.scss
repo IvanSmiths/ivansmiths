@@ -14,7 +14,6 @@
   width: 100%;
   position: fixed;
   padding: 0 1.5rem;
-  background-color: var(--color-bg);
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -25,6 +24,11 @@
     display: block;
     cursor: pointer;
   }
+}
+
+.nav-scrolled {
+  background-color: var(--color-bg);
+  box-shadow: 0 3px 20px rgba(black, 0.2);
 }
 
 .logo {
@@ -41,6 +45,15 @@
 
 .header-toggle {
   opacity: 0;
+}
+
+.ico-nav-cnt {
+  padding: 1rem;
+}
+
+.ico-nav {
+  margin: 0rem 0.4rem;
+  height: 26px;
 }
 
 .theme-switch-wrapper {

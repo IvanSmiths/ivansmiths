@@ -1,48 +1,46 @@
-// const hamburger = document.querySelector('.hamburger');
-// const navLinks = document.querySelector('.nav-links');
-// const links = document.querySelectorAll('.nav-links li');
-
-// hamburger.addEventListener('click', () => {
-//   //Animate Links
-//   navLinks.classList.toggle('open');
-//   links.forEach((link) => {
-//     link.classList.toggle('fade');
-//   });
-
-//   //Hamburger Animation
-//   hamburger.classList.toggle('toggle');
-// });
-
-/*===== MENU SHOW Y HIDDEN =====*/
 const navMenu = document.getElementById('nav-menu'),
   toggleMenu = document.getElementById('nav-toggle'),
   closeMenu = document.getElementById('nav-close');
 
-/*SHOW*/
 toggleMenu.addEventListener('click', () => {
   navMenu.classList.toggle('show');
 });
 
-/*HIDDEN*/
 closeMenu.addEventListener('click', () => {
   navMenu.classList.remove('show');
 });
 
-/*===== ACTIVE AND REMOVE MENU =====*/
 const navLink = document.querySelectorAll('.nav__link');
 
 function linkAction() {
-  /*Active link*/
   navLink.forEach((n) => n.classList.remove('active'));
   this.classList.add('active');
 
-  /*Remove menu mobile*/
   navMenu.classList.remove('show');
 }
 navLink.forEach((n) => n.addEventListener('click', linkAction));
 
-//                  WRITE BEGIN
-//                  WRITE BEGIN
+// OBSERVER
+
+const scroll = document.querySelector('.header-nav');
+const sectionOne = document.querySelector('#header');
+
+const sectionOneOptions = {
+  rootMargin: '-200px 0px 0px 0px',
+};
+
+const sectionOneObserver = new IntersectionObserver(function (entries) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      scroll.classList.add('nav-scrolled');
+    } else {
+      scroll.classList.remove('nav-scrolled');
+    }
+  });
+}, sectionOneOptions);
+
+sectionOneObserver.observe(sectionOne);
+
 //                  WRITE BEGIN
 
 class TypeWriter {
@@ -93,8 +91,6 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 
-//                  SCROLL BEGIN
-//                  SCROLL BEGIN
 //                  SCROLL BEGIN
 
 const header = document.querySelector('#header-link');
@@ -187,20 +183,6 @@ contactBtn.addEventListener('click', () => {
 });
 
 //                  TOGGLE BEGIN
-
-const wave = document.querySelector('#wave');
-
-function click() {
-  wave.addEventListener('click', function (e) {
-    console.log('clicked');
-  });
-}
-
-function displayDate() {
-  document.getElementById('wave').innerHTML = Date();
-}
-
-click();
 
 const toggleSwitch = document.querySelector(
   '.theme-switch input[type="checkbox"]'

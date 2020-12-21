@@ -20,6 +20,11 @@ ul {
   list-style-type: none;
 }
 
+li {
+  -webkit-transition: var(--speed-one);
+  transition: var(--speed-one);
+}
+
 .title {
   font-size: var(--h1-size);
   -webkit-transition: var(--speed-one);
@@ -270,7 +275,6 @@ textarea {
   width: 100%;
   position: fixed;
   padding: 0 1.5rem;
-  background-color: var(--color-bg);
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,6 +294,12 @@ textarea {
   cursor: pointer;
 }
 
+.nav-scrolled {
+  background-color: var(--color-bg);
+  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+
 .logo {
   cursor: pointer;
 }
@@ -304,6 +314,15 @@ textarea {
 
 .header-toggle {
   opacity: 0;
+}
+
+.ico-nav-cnt {
+  padding: 1rem;
+}
+
+.ico-nav {
+  margin: 0rem 0.4rem;
+  height: 26px;
 }
 
 .theme-switch-wrapper {
