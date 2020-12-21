@@ -45,7 +45,7 @@
         style="display: none; visibility: hidden"
       ></iframe
     ></noscript>
-    <nav>
+    <!-- <nav>
       <div class="logo">
         <img src="./img/logo.svg" alt="Logo Image" />
       </div>
@@ -68,8 +68,51 @@
           <div class="slider round"></div>
         </label>
       </div>
-    </nav>
-    <header id="header" class="header">
+    </nav> -->
+    <header class="header-nav">
+      <a href="#" class="header__logo">Ivan Smiths</a>
+
+      <ion-icon
+        name="menu-outline"
+        class="header__toggle"
+        id="nav-toggle"
+      ></ion-icon>
+
+      <nav class="nav" id="nav-menu">
+        <div class="nav__content bd-grid">
+          <ion-icon
+            name="close-outline"
+            class="nav__close"
+            id="nav-close"
+          ></ion-icon>
+
+          <div class="nav__perfil">
+            <div class="nav__img">
+              <img src="assets/img/perfil.png" alt="" />
+            </div>
+          </div>
+
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li id="header-link" class="nav__item nav__link">Header</li>
+              <li id="skills-link" class="nav__item nav__link">Skills</li>
+              <li id="about-link" class="nav__item nav__link">About</li>
+              <li id="works-link" class="nav__item nav__link">Works</li>
+              <li id="projects-link" class="nav__item nav__link">Projects</li>
+              <li id="contact-link" class="nav__item nav__link">Contact</li>
+            </ul>
+          </div>
+
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider round"></div>
+            </label>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="header" class="header">
       <div class="header-text-cnt">
         <h1 class="title">
           Stuck with your <br />
@@ -159,7 +202,7 @@
           </g>
         </svg>
       </div>
-    </header>
+    </section>
 
     <!--SKILLS START-->
     <!--SKILLS START-->
@@ -529,6 +572,7 @@
       nomodule
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
     ></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

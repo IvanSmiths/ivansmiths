@@ -1,17 +1,45 @@
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-const links = document.querySelectorAll('.nav-links li');
+// const hamburger = document.querySelector('.hamburger');
+// const navLinks = document.querySelector('.nav-links');
+// const links = document.querySelectorAll('.nav-links li');
 
-hamburger.addEventListener('click', () => {
-  //Animate Links
-  navLinks.classList.toggle('open');
-  links.forEach((link) => {
-    link.classList.toggle('fade');
-  });
+// hamburger.addEventListener('click', () => {
+//   //Animate Links
+//   navLinks.classList.toggle('open');
+//   links.forEach((link) => {
+//     link.classList.toggle('fade');
+//   });
 
-  //Hamburger Animation
-  hamburger.classList.toggle('toggle');
+//   //Hamburger Animation
+//   hamburger.classList.toggle('toggle');
+// });
+
+/*===== MENU SHOW Y HIDDEN =====*/
+const navMenu = document.getElementById('nav-menu'),
+  toggleMenu = document.getElementById('nav-toggle'),
+  closeMenu = document.getElementById('nav-close');
+
+/*SHOW*/
+toggleMenu.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
 });
+
+/*HIDDEN*/
+closeMenu.addEventListener('click', () => {
+  navMenu.classList.remove('show');
+});
+
+/*===== ACTIVE AND REMOVE MENU =====*/
+const navLink = document.querySelectorAll('.nav__link');
+
+function linkAction() {
+  /*Active link*/
+  navLink.forEach((n) => n.classList.remove('active'));
+  this.classList.add('active');
+
+  /*Remove menu mobile*/
+  navMenu.classList.remove('show');
+}
+navLink.forEach((n) => n.addEventListener('click', linkAction));
 
 //                  WRITE BEGIN
 //                  WRITE BEGIN
