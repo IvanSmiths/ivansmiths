@@ -91,6 +91,15 @@ li {
   transition: var(--speed-one);
 }
 
+.highlight-yellow {
+  color: var(--color-click);
+  transition: var(--speed-one);
+}
+
+.bold {
+  font-weight: 800;
+}
+
 .btn {
   border-radius: 25rem;
   cursor: pointer;
@@ -99,7 +108,7 @@ li {
   padding: 0.8rem 1.6rem;
   font-size: var(--p-size);
   transition: 0.4s ease-in-out;
-  color: white;
+  color: rgb(31, 31, 31);
   transform-style: preserve-3d;
 }
 

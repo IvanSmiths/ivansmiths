@@ -96,6 +96,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header-logo {
+    height: 2rem;
+    margin-left: 0rem;
+  }
   .bd-grid {
     display: flex;
     justify-content: space-evenly;
@@ -353,6 +357,7 @@
   }
 
   .model-cnt {
+    background-size: 65vw;
     margin-top: 6rem;
   }
 

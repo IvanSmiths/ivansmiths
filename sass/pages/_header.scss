@@ -8,7 +8,7 @@
   display: grid;
   color: white;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: fit-content fit-content;
+  grid-template-rows: 100vh min-content;
 }
 
 .header-text-cnt {
@@ -35,6 +35,10 @@
 .model-cnt {
   margin-top: 5rem;
   grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  background: url(../../img/blob.svg) no-repeat;
+  background-size: 40vw;
+  background-position: center;
 }
 
 .model {

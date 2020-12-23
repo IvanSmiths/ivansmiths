@@ -30,10 +30,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="apple-touch-icon" href="./img/favicon.png" />
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
-    <title>Ivan Smiths's portfolio, developer.</title>
+    <title>
+      Web developer/designer portfolio. React, Javscript, Node, MongoDB and
+      Blender developer.
+    </title>
     <meta
       name="description"
-      content="Developer's portfolio with knowledge of React, Node, MongoDB, Blender, 3D Modeling, Augmented Reality and many more. Wanna work on something? Contact me!"
+      content="Web Developer's portfolio with knowledge of React, Node, MongoDB, Javascript, Blender, 3D Modeling, AR and basics of backend. "
     />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="stylesheet" href="./main.css" />
@@ -140,10 +143,11 @@
               data-wait="3000"
               data-words='["Frontend", "React", "AR", "Node", "MongoDB", "Express", "JavaScript"]'
             ></span>
-            Project? I can help YOU!
+            Project? I can help <strong class="highlight-yellow">YOU!</strong>
           </h1>
           <p class="paragraph-inverse">
-            Ivan Smiths here. Web developer with intermediate frontend skills
+            <strong class="bold highlight-yellow">Ivan Smiths</strong> here. Web
+            developer with intermediate frontend skills
             <br />
             and basics of backend. Passionated of 3D, i always try to blend my
             two passions.
@@ -258,8 +262,8 @@
             <div class="card-back">
               <p class="card-body h6-title">
                 .new-technologies {<br />
-                <strong class="highlight">Sass, Flexbox and Css grid</strong>,
-                are technologies that i use every single time.
+                <span class="highlight">Sass, Flexbox and Css grid</span>, are
+                technologies that i use every single time.
                 <br />
                 };
               </p>
@@ -269,14 +273,18 @@
         <div class="card">
           <div class="card-content">
             <div class="card-front">
-              <img class="card-ico" src="./img/javascript_ico.png" alt="" />
+              <img
+                class="card-ico"
+                src="./img/javascript_ico.png"
+                alt="javascript-ico"
+              />
             </div>
             <div class="card-back">
               <p class="card-body h6-title">
                 myKnowledge () => { <br />
                 console.log('
-                <strong class="highlight">Es6 syntax</strong> , like Classes,
-                and the most modern Array methods, are my second name!' <br />
+                <span class="highlight">Es6 syntax</span> , like Classes, and
+                the most modern Array methods, are my second name!' <br />
                 };
               </p>
             </div>
@@ -288,13 +296,13 @@
               <img
                 class="card-ico card-react"
                 src="./img/react_ico.png"
-                alt=""
+                alt="react-ico"
               />
             </div>
             <div class="card-back">
               <p class="card-body h6-title">
                 Functional components with
-                <strong class="highlight">React Hooks</strong>, but without
+                <span class="highlight">React Hooks</span>, but without
                 forgetting he good old Class components with state.
               </p>
             </div>
@@ -303,14 +311,14 @@
         <div class="card">
           <div class="card-content">
             <div class="card-front">
-              <img class="card-ico" src="./img/nodejs_ico.png" alt="" />
+              <img class="card-ico" src="./img/nodejs_ico.png" alt="node-ico" />
             </div>
             <div class="card-back">
               <p class="card-body h6-title">
                 app.get('/skills', (req, res) => { <br />
                 res.send('I now how to build
-                <strong class="highlight">REST API</strong>, how to use
-                middleware, and security best practices. ');
+                <span class="highlight">REST API</span>, how to use middleware,
+                and security best practices. ');
                 <br />
                 });
               </p>
@@ -323,14 +331,14 @@
               <img
                 class="card-ico card-mongodb"
                 src="./img/mongodb_ico.png"
-                alt=""
+                alt="mongodb-ico"
               />
             </div>
             <div class="card-back">
               <p class="card-body h6-title">
                 Should i write this in JSON? Probably not. I know how to do
                 basic CRUD operation, how to use
-                <strong class="highlight">mongoose</strong>, and more.
+                <span class="highlight">mongoose</span>, and more.
               </p>
             </div>
           </div>
@@ -338,7 +346,11 @@
         <div class="card">
           <div class="card-content">
             <div class="card-front">
-              <img class="card-ico" src="./img/blender_ico.png" alt="" />
+              <img
+                class="card-ico"
+                src="./img/blender_ico.png"
+                alt="blender-ico"
+              />
             </div>
             <div class="card-back">
               <p class="card-body h6-title">
@@ -498,7 +510,7 @@
           If you want to see my complete curriculum, or if you just want to get
           in touch, feel free to say hi!
         </p>
-        <h3 class="h6-title">Email: info@ivansmiths.com</h3>
+        <h3 class="h6-title">Grab this: info@ivansmiths.com</h3>
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -516,7 +528,6 @@
             class="ico-social ico-2"
             src="./img/twitter-ico.png"
             alt="twitter-ico"
-            fill="white"
         /></a>
         <a
           target="_blank"
@@ -525,7 +536,6 @@
           ><img
             class="ico-social ico-2"
             src="./img/github-ico.png"
-            fill="white"
             alt="github-ico"
         /></a>
       </div>
@@ -541,7 +551,6 @@
           class="input-contact"
           type="text"
           name="name"
-          placeholder="Your Name..."
           minlength="3"
           maxlength="20"
         />
@@ -553,7 +562,6 @@
           class="input-contact"
           type="text"
           name="object"
-          placeholder="Your Object..."
         />
         <label for="email">Email</label>
         <input
@@ -561,14 +569,12 @@
           class="input-contact"
           type="email"
           name="email"
-          placeholder="Your Email..."
         />
         <label for="message">Message</label>
         <textarea
           required="true"
           class="input-message"
           name="message"
-          placeholder="Your Message..."
           cols="30"
           rows="10"
         ></textarea>
