@@ -24,6 +24,12 @@
   transition: var(--speed-one);
 }
 
+.work-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .work:hover {
   transform: scale(1.05);
 }

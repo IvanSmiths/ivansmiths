@@ -27,3 +27,50 @@
 .project:hover {
   transform: scale(1.05);
 }
+
+.project-1 {
+  background-image: url(../../img/project-1-little.jpg);
+  background-position: center;
+  background-size: 30vw;
+  background-repeat: no-repeat;
+  background-color: rgb(220, 222, 228);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.698);
+}
+
+.modal-content {
+  background-color: var(--color-bg);
+  margin: 20% auto;
+  padding: 2rem;
+  width: 70vw;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.281);
+  animation: modalopen 1s;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  border-radius: 1rem;
+}
+
+.modal-text h3 {
+  margin-bottom: 1rem;
+}
+
+.modal-img-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-img-cnt img {
+  width: 100%;
+  border-radius: 1rem;
+}

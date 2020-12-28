@@ -139,7 +139,7 @@ function contactScroll() {
 }
 
 function worksScrollBtn() {
-  document.querySelector('#works').scrollIntoView({
+  document.querySelector('#projects').scrollIntoView({
     behavior: 'smooth',
   });
 }
@@ -181,6 +181,24 @@ worksBtn.addEventListener('click', () => {
 contactBtn.addEventListener('click', () => {
   contactScrollBtn();
 });
+
+//                  MODAL BEGIN
+
+const modal = document.querySelector('#simpleModal');
+const modalBtn = document.querySelector('#modalBtn');
+
+const openModal = () => {
+  modal.style.display = 'block';
+};
+
+const clickOutside = (e) => {
+  if (e.target == modal) {
+    modal.style.display = 'none';
+  }
+};
+
+modalBtn.addEventListener('click', openModal);
+window.addEventListener('click', clickOutside);
 
 //                  TOGGLE BEGIN
 

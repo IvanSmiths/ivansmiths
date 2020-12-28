@@ -343,6 +343,13 @@
     display: block;
     margin: 5rem 0rem;
   }
+
+  .modal-content {
+    background-color: var(--color-bg);
+    margin: 35% auto;
+    padding: 2rem;
+    width: 80vw;
+  }
 }
 
 @media screen and (max-width: 550px) {

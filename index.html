@@ -155,7 +155,9 @@
           <button id="contact-button" class="btn-line header-btn">
             Contact Me
           </button>
-          <button id="works-button" class="btn work-button">See Works</button>
+          <button id="works-button" class="btn work-button">
+            See Projects
+          </button>
         </div>
         <div class="model-cnt">
           <model-viewer
@@ -476,8 +478,9 @@
         <h2 class="h2-title">MY WORKS</h2>
       </div>
       <div class="works-cnt">
-        <div class="work work-1"></div>
-        <div class="work work-2"></div>
+        <div class="work work-1">
+          <h3 class="h2-title">Coming Soon...</h3>
+        </div>
       </div>
     </section>
 
@@ -490,8 +493,30 @@
         <h2 class="h2-title">MY PROJECTS</h2>
       </div>
       <div class="projects-cnt">
-        <div class="project project-1"></div>
-        <div class="project project-2"></div>
+        <div id="modalBtn" class="project project-1"></div>
+        <div id="simpleModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-text">
+              <h3 class="h6-title highlight">UNSPLASHY</h3>
+              <p class="paragraph">
+                UNSPLASHY is a React (Create-React-App) project. Using the Api
+                of Unsplash, the user is able to search between images based on
+                the search keyword. It will also dynamically show the author
+                name, the amount of likes and the link to the portfolio of the
+                author.
+              </p>
+            </div>
+            <div class="modal-img-cnt">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://unsplashy.herokuapp.com/"
+              >
+                <img src="./img/project-1.jpg" alt="project-image"
+              /></a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -510,7 +535,9 @@
           If you want to see my complete curriculum, or if you just want to get
           in touch, feel free to say hi!
         </p>
-        <h3 class="h6-title">Grab this: info@ivansmiths.com</h3>
+        <h3 class="h6-title">
+          <strong class="highlight">Grab this: </strong>info@ivansmiths.com
+        </h3>
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -547,6 +574,7 @@
       >
         <label for="name">Name</label>
         <input
+          id="name"
           required="true"
           class="input-contact"
           type="text"
@@ -556,6 +584,7 @@
         />
         <label for="object">Object</label>
         <input
+          id="object"
           minlength="3"
           maxlength="30"
           required="true"
@@ -565,6 +594,7 @@
         />
         <label for="email">Email</label>
         <input
+          id="email"
           required="true"
           class="input-contact"
           type="email"
@@ -572,6 +602,7 @@
         />
         <label for="message">Message</label>
         <textarea
+          id="message"
           required="true"
           class="input-message"
           name="message"

@@ -1,8 +1,8 @@
 .header {
   background: linear-gradient(
     60deg,
-    var(--color-main) 0%,
-    var(--color-sec) 100%
+    var(--color-sec) 0%,
+    var(--color-main) 100%
   );
   transition: var(--speed-one);
   display: grid;
