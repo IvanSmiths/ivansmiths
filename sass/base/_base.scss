@@ -89,15 +89,12 @@ li {
 .highlight {
   color: var(--color-main);
   transition: var(--speed-one);
+  font-weight: 600;
 }
 
 .highlight-yellow {
   color: var(--color-click);
   transition: var(--speed-one);
-}
-
-.bold {
-  font-weight: 800;
 }
 
 .btn {
