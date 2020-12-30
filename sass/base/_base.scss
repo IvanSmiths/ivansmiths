@@ -40,6 +40,12 @@ li {
   transition: var(--speed-one);
 }
 
+.h6-title-white {
+  font-size: var(--h6-size);
+  color: var(--color-text-white);
+  transition: var(--speed-one);
+}
+
 .h7-title {
   font-size: var(--h7-size);
 }
