@@ -137,8 +137,8 @@ li {
   border: 1px solid white;
   padding: 0.8rem 1.6rem;
   font-size: var(--p-size);
-  -webkit-box-shadow: 0 0.3rem 3rem 0.4rem rgba(0, 0, 0, 0.164);
-          box-shadow: 0 0.3rem 3rem 0.4rem rgba(0, 0, 0, 0.164);
+  -webkit-box-shadow: 0 0.3rem 3rem 0.4rem rgba(255, 255, 255, 0.137);
+          box-shadow: 0 0.3rem 3rem 0.4rem rgba(255, 255, 255, 0.137);
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   background-color: none;
@@ -434,9 +434,9 @@ input:checked + .slider:before {
   color: white;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 100vh min-content;
-      grid-template-rows: 100vh -webkit-min-content;
-      grid-template-rows: 100vh min-content;
+  -ms-grid-rows: minmax(min-content, 110vh) min-content;
+      grid-template-rows: minmax(-webkit-min-content, 110vh) -webkit-min-content;
+      grid-template-rows: minmax(min-content, 110vh) min-content;
 }
 
 .header-text-cnt {

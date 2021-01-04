@@ -8,7 +8,7 @@
   display: grid;
   color: white;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100vh min-content;
+  grid-template-rows: minmax(min-content, 110vh) min-content;
 }
 
 .header-text-cnt {
