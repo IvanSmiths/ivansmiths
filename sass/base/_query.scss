@@ -375,19 +375,24 @@
   .modal-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: min-content 1fr 1fr;
     gap: 2rem;
+  }
+
+  .modal-title {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
   }
 
   .modal-text {
     grid-column: 1 /3;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
     text-align: center;
   }
 
   .modal-img-cnt {
     grid-column: 1 / 3;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
   }
 }
 

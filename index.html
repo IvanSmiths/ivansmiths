@@ -167,32 +167,17 @@
             src="model/3d-model.glb"
             ios-src="model/3d-model.usdz"
             ar
-            ar-scale="auto"
             poster="model/poster.png"
             exposure="0.4"
-            camera-orbit="-358.5deg 78.8deg 120.8m"
             camera-controls
             auto-rotate
-            auto-rotate-delay="1000"
+            auto-rotate-delay="500"
             alt="A 3D model of myself."
           >
             <div id="error" class="hide">
               AR is not supported on this device
             </div>
           </model-viewer>
-          <script>
-            document
-              .querySelector('model-viewer')
-              .addEventListener('ar-status', (event) => {
-                if (event.detail.status === 'failed') {
-                  const error = document.querySelector('#error');
-                  error.classList.remove('hide');
-                  error.addEventListener('transitionend', (event) => {
-                    error.classList.add('hide');
-                  });
-                }
-              });
-          </script>
         </div>
 
         <!--WAVES START-->
@@ -493,11 +478,14 @@
         <h2 class="h2-title">MY PROJECTS</h2>
       </div>
       <div class="projects-cnt">
-        <div id="modalBtn" class="project project-1"></div>
-        <div id="simpleModal" class="modal">
+        <div id="modal-btn" class="project project-1"></div>
+        <div id="my-modal" class="modal">
           <div class="modal-content">
-            <div class="modal-text">
+            <div class="modal-title">
               <h3 class="h6-title highlight">UNSPLASHY</h3>
+              <span class="close">&times;</span>
+            </div>
+            <div class="modal-text">
               <p class="paragraph">
                 UNSPLASHY is a React (Create-React-App) project. Using the Api
                 of Unsplash, the user is able to search between images based on

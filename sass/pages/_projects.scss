@@ -60,6 +60,21 @@
   border-radius: 1rem;
 }
 
+.modal-title {
+  grid-column: 1 / 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title span {
+  font-size: 3.5rem;
+  cursor: pointer;
+  color: var(--color-text-main);
+}
+
 .modal-text h3 {
   margin-bottom: 1rem;
 }

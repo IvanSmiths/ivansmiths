@@ -184,21 +184,27 @@ contactBtn.addEventListener('click', () => {
 
 //                  MODAL BEGIN
 
-const modal = document.querySelector('#simpleModal');
-const modalBtn = document.querySelector('#modalBtn');
-
-const openModal = () => {
-  modal.style.display = 'block';
-};
-
-const clickOutside = (e) => {
-  if (e.target === modal) {
-    modal.style.display = 'none';
-  }
-};
+const modal = document.querySelector('#my-modal');
+const modalBtn = document.querySelector('#modal-btn');
+const closeBtn = document.querySelector('.close');
 
 modalBtn.addEventListener('click', openModal);
-window.addEventListener('click', clickOutside);
+closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', outsideClick);
+
+function openModal() {
+  modal.style.display = 'block';
+}
+
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+function outsideClick(e) {
+  if (e.target == modal) {
+    modal.style.display = 'none';
+  }
+}
 
 //                  TOGGLE BEGIN
 
@@ -216,3 +222,15 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
+
+document
+  .querySelector('model-viewer')
+  .addEventListener('ar-status', (event) => {
+    if (event.detail.status === 'failed') {
+      const error = document.querySelector('#error');
+      error.classList.remove('hide');
+      error.addEventListener('transitionend', (event) => {
+        error.classList.add('hide');
+      });
+    }
+  });
