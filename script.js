@@ -192,7 +192,7 @@ const openModal = () => {
 };
 
 const clickOutside = (e) => {
-  if (e.target == modal) {
+  if (e.target === modal) {
     modal.style.display = 'none';
   }
 };
