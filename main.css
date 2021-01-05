@@ -115,6 +115,7 @@ li {
   color: var(--color-click);
   -webkit-transition: var(--speed-one);
   transition: var(--speed-one);
+  font-weight: 600;
 }
 
 .btn {
@@ -202,7 +203,7 @@ textarea {
   --level-one: translateZ(13rem);
   --level-two: translateZ(6rem);
   --level-three: translateZ(9rem);
-  --speed-one: 0.5s ease-in-out;
+  --speed-one: 1s ease-in-out;
   --speed-half: 0.2s ease-in-out;
 }
 
@@ -639,10 +640,10 @@ input:checked + .slider:before {
   text-align: center;
   position: relative;
   padding: 11em 5em;
-  -webkit-transition: -webkit-transform 1.3s;
-  transition: -webkit-transform 1.3s;
-  transition: transform 1.3s;
-  transition: transform 1.3s, -webkit-transform 1.3s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
@@ -706,6 +707,10 @@ input:checked + .slider:before {
           transform: var(--level-two);
 }
 
+.cube-3d {
+  height: 100%;
+}
+
 .card-html {
   width: 14rem;
   height: auto;
@@ -714,6 +719,10 @@ input:checked + .slider:before {
 .card-react {
   width: 13rem;
   height: auto;
+}
+
+.card-blender {
+  padding: 1.5rem;
 }
 
 .card-mongodb {
@@ -1140,6 +1149,8 @@ input:checked + .slider:before {
 label {
   margin: 0rem 1rem;
   color: var(--color-text-main);
+  -webkit-transition: var(--speed-one);
+  transition: var(--speed-one);
 }
 
 .input-contact {
@@ -1188,6 +1199,24 @@ label {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 110%;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  html {
+    font-size: 170%;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  html {
+    font-size: 230%;
+  }
 }
 
 @media screen and (max-width: 1400px) {

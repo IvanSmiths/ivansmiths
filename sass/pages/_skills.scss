@@ -30,7 +30,7 @@
   text-align: center;
   position: relative;
   padding: 11em 5em;
-  transition: transform 1.3s;
+  transition: transform 1s;
   transform-style: preserve-3d;
 }
 
@@ -77,6 +77,10 @@
   transform: var(--level-two);
 }
 
+.cube-3d {
+  height: 100%;
+}
+
 .card-html {
   width: 14rem;
   height: auto;
@@ -85,6 +89,10 @@
 .card-react {
   width: 13rem;
   height: auto;
+}
+
+.card-blender {
+  padding: 1.5rem;
 }
 
 .card-mongodb {

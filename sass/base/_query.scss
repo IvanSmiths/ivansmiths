@@ -1,3 +1,19 @@
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 110%;
+  }
+}
+@media screen and (min-width: 1900px) {
+  html {
+    font-size: 170%;
+  }
+}
+@media screen and (min-width: 2400px) {
+  html {
+    font-size: 230%;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   html {
     font-size: 92%;
