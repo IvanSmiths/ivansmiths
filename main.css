@@ -981,10 +981,15 @@ input:checked + .slider:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1008,6 +1013,30 @@ input:checked + .slider:before {
 
 .project-1 {
   background-image: url(../../img/project-1-little.jpg);
+  background-position: center;
+  background-size: 30vw;
+  background-repeat: no-repeat;
+  background-color: #dcdee4;
+}
+
+.project-2 {
+  background-image: url(../../img/project-preview.jpg);
+  background-position: center;
+  background-size: 30vw;
+  background-repeat: no-repeat;
+  background-color: #dcdee4;
+}
+
+.project-3 {
+  background-image: url(../../img/project-preview-2.jpg);
+  background-position: center;
+  background-size: 30vw;
+  background-repeat: no-repeat;
+  background-color: #dcdee4;
+}
+
+.project-4 {
+  background-image: url(../../img/project-preview-3.jpg);
   background-position: center;
   background-size: 30vw;
   background-repeat: no-repeat;
