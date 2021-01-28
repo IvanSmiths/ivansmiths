@@ -138,11 +138,11 @@ function contactScroll() {
   });
 }
 
-// function worksScrollBtn() {
-//   document.querySelector('#projects').scrollIntoView({
-//     behavior: 'smooth',
-//   });
-// }
+function worksScrollBtn() {
+  document.querySelector('#projects').scrollIntoView({
+    behavior: 'smooth',
+  });
+}
 
 function contactScrollBtn() {
   document.querySelector('#contact').scrollIntoView({
@@ -174,9 +174,9 @@ contact.addEventListener('click', () => {
   contactScroll();
 });
 
-// worksBtn.addEventListener('click', () => {
-//   worksScrollBtn();
-// });
+worksBtn.addEventListener('click', () => {
+  worksScrollBtn();
+});
 
 contactBtn.addEventListener('click', () => {
   contactScrollBtn();

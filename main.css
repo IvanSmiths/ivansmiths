@@ -138,8 +138,6 @@ li {
   border: 1px solid white;
   padding: 0.8rem 1.6rem;
   font-size: var(--p-size);
-  -webkit-box-shadow: 0 0.3rem 3rem 0.4rem rgba(255, 255, 255, 0.137);
-          box-shadow: 0 0.3rem 3rem 0.4rem rgba(255, 255, 255, 0.137);
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   background-color: none;
@@ -1040,7 +1038,7 @@ input:checked + .slider:before {
 }
 
 .project-4 {
-  background-image: url(../../img/project-preview-3.jpg);
+  background-image: url(../../img/project-3.jpg);
   background-position: center;
   background-size: 30vw;
   background-repeat: no-repeat;
@@ -1119,7 +1117,7 @@ input:checked + .slider:before {
 }
 
 .modal-img-cnt img {
-  width: 100%;
+  width: 70%;
   border-radius: 1rem;
 }
 
@@ -1758,6 +1756,10 @@ label {
   .waves-about {
     margin-top: -19rem;
   }
+}
+
+.qr-code {
+  width: 50%;
 }
 
 #error {
