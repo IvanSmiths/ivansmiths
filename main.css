@@ -318,6 +318,11 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: var(--color-bg-nav);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   -webkit-transition: var(--speed-one);
   transition: var(--speed-one);
 }
@@ -325,14 +330,6 @@ textarea {
 .header-nav-logo {
   display: block;
   cursor: pointer;
-}
-
-.nav-scrolled {
-  background-color: var(--color-bg-nav);
-  backdrop-filter: blur(9.5px);
-  -webkit-backdrop-filter: blur(9.5px);
-  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -998,8 +995,8 @@ input:checked + .slider:before {
 }
 
 .project {
-  width: 30vw;
-  height: 10rem;
+  width: 40vw;
+  height: 20rem;
   margin: 2rem;
   padding: 2rem;
   border-radius: 3rem;
@@ -1016,7 +1013,7 @@ input:checked + .slider:before {
 .project-1 {
   background-image: url(../../img/project-1-little.jpg);
   background-position: center;
-  background-size: 30vw;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #dcdee4;
 }
@@ -1024,7 +1021,7 @@ input:checked + .slider:before {
 .project-2 {
   background-image: url(../../img/project-2.jpg);
   background-position: center;
-  background-size: 30vw;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #dcdee4;
 }
@@ -1032,7 +1029,7 @@ input:checked + .slider:before {
 .project-3 {
   background-image: url(../../img/project-preview-2.jpg);
   background-position: center;
-  background-size: 30vw;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #dcdee4;
 }
@@ -1040,7 +1037,7 @@ input:checked + .slider:before {
 .project-4 {
   background-image: url(../../img/project-3.jpg);
   background-position: center;
-  background-size: 30vw;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #dcdee4;
 }

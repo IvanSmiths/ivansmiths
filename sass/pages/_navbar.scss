@@ -18,19 +18,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--color-bg-nav);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  box-shadow: 0 3px 20px rgba(black, 0.2);
   transition: var(--speed-one);
 
   &-logo {
     display: block;
     cursor: pointer;
   }
-}
-
-.nav-scrolled {
-  background-color: var(--color-bg-nav);
-  backdrop-filter: blur(9.5px);
-  -webkit-backdrop-filter: blur(9.5px);
-  box-shadow: 0 3px 20px rgba(black, 0.2);
 }
 
 .logo {

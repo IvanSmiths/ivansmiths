@@ -20,27 +20,6 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener('click', linkAction));
 
-// OBSERVER
-
-const scroll = document.querySelector('.header-nav');
-const sectionOne = document.querySelector('#header');
-
-const sectionOneOptions = {
-  rootMargin: '-200px 0px 0px 0px',
-};
-
-const sectionOneObserver = new IntersectionObserver(function (entries) {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      scroll.classList.add('nav-scrolled');
-    } else {
-      scroll.classList.remove('nav-scrolled');
-    }
-  });
-}, sectionOneOptions);
-
-sectionOneObserver.observe(sectionOne);
-
 //                  WRITE BEGIN
 
 class TypeWriter {
