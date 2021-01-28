@@ -96,7 +96,7 @@ function init() {
 const header = document.querySelector('#header-link');
 const skills = document.querySelector('#skills-link');
 const about = document.querySelector('#about-link');
-const works = document.querySelector('#works-link');
+// const works = document.querySelector('#works-link');
 const projects = document.querySelector('#projects-link');
 const contact = document.querySelector('#contact-link');
 const worksBtn = document.querySelector('#works-button');
@@ -120,11 +120,11 @@ function aboutScroll() {
   });
 }
 
-function worksScroll() {
-  document.querySelector('#works').scrollIntoView({
-    behavior: 'smooth',
-  });
-}
+// function worksScroll() {
+//   document.querySelector('#works').scrollIntoView({
+//     behavior: 'smooth',
+//   });
+// }
 
 function projectScroll() {
   document.querySelector('#projects').scrollIntoView({
@@ -138,11 +138,11 @@ function contactScroll() {
   });
 }
 
-function worksScrollBtn() {
-  document.querySelector('#projects').scrollIntoView({
-    behavior: 'smooth',
-  });
-}
+// function worksScrollBtn() {
+//   document.querySelector('#projects').scrollIntoView({
+//     behavior: 'smooth',
+//   });
+// }
 
 function contactScrollBtn() {
   document.querySelector('#contact').scrollIntoView({
@@ -162,9 +162,9 @@ about.addEventListener('click', () => {
   aboutScroll();
 });
 
-works.addEventListener('click', () => {
-  worksScroll();
-});
+// works.addEventListener('click', () => {
+//   worksScroll();
+// });
 
 projects.addEventListener('click', () => {
   projectScroll();
@@ -174,9 +174,9 @@ contact.addEventListener('click', () => {
   contactScroll();
 });
 
-worksBtn.addEventListener('click', () => {
-  worksScrollBtn();
-});
+// worksBtn.addEventListener('click', () => {
+//   worksScrollBtn();
+// });
 
 contactBtn.addEventListener('click', () => {
   contactScrollBtn();
