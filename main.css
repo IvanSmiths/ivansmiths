@@ -1034,6 +1034,14 @@ input:checked + .slider:before {
   background-color: #dcdee4;
 }
 
+.project-5 {
+  background-image: url(../../img/project-preview-4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #dcdee4;
+}
+
 .project-4 {
   background-image: url(../../img/project-3.jpg);
   background-position: center;

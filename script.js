@@ -250,6 +250,28 @@ function outsideClick4(e) {
   }
 }
 
+const modal5 = document.querySelector('#my-modal5');
+const modalBtn5 = document.querySelector('#modal-btn5');
+const closeBtn5 = document.querySelector('.close5');
+
+modalBtn5.addEventListener('click', openModal5);
+closeBtn5.addEventListener('click', closeModal5);
+window.addEventListener('click', outsideClick5);
+
+function openModal5() {
+  modal5.style.display = 'block';
+}
+
+function closeModal5() {
+  modal5.style.display = 'none';
+}
+
+function outsideClick5(e) {
+  if (e.target == modal5) {
+    modal5.style.display = 'none';
+  }
+}
+
 //                  TOGGLE BEGIN
 
 const toggleSwitch = document.querySelector(
