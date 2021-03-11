@@ -98,6 +98,11 @@ li {
   font-weight: 600;
 }
 
+.bold {
+  transition: var(--speed-one);
+  font-weight: 600;
+}
+
 .highlight-yellow {
   color: var(--color-click);
   transition: var(--speed-one);

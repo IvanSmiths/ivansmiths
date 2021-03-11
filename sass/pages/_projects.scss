@@ -4,8 +4,13 @@
 }
 
 .my-projects {
-  margin: 8rem 3rem;
+  margin: 2rem 3rem;
   text-align: center;
+}
+
+.my-projects p {
+  margin-top: 2rem;
+  padding: 0rem 8rem;
 }
 
 .projects-cnt {
@@ -87,7 +92,7 @@
   animation: modalopen 1s;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 1rem 2rem;
   border-radius: 1rem;
 }
 
@@ -101,7 +106,7 @@
 }
 
 .modal-title span {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   cursor: pointer;
   color: var(--color-text-main);
 }
@@ -111,9 +116,7 @@
 }
 
 .modal-img-cnt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .modal-img-cnt img {

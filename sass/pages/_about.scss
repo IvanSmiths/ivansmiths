@@ -1,7 +1,7 @@
 .presentation {
   background-color: var(--color-main);
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 2fr;
   grid-template-rows: fit-content 1rem 1fr 10rem;
   transition: var(--speed-one);
 }
@@ -56,11 +56,16 @@
   grid-row: 2 / 3;
   grid-column: 1 / 3;
   text-align: center;
-  text-transform: uppercase;
   margin: 2rem 3rem;
 }
 
 .pr-h2 h3 {
+  text-transform: uppercase;
+  color: var(--color-text-white);
+}
+
+.pr-h2 h4 {
+  margin-top: 1rem;
   color: var(--color-text-white);
 }
 
@@ -81,9 +86,14 @@
 
 .presentation-sub-cnt {
   background-color: var(--color-main);
+  grid-row: 3 / 4;
   grid-column: 2 / 3;
-  grid-row: 1 / 4;
   transition: var(--speed-one);
+}
+
+.img-myself {
+  width: 30vw;
+  border-radius: 4rem;
 }
 
 .presentation-list {
@@ -127,14 +137,4 @@
 
 .button-cnt button {
   width: 14rem;
-}
-
-.img-cnt {
-  margin-left: -10rem;
-  margin-top: 14rem;
-}
-
-.img-myself {
-  width: 30vw;
-  border-radius: 4rem;
 }
