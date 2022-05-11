@@ -1,3 +1,2 @@
-# Personal postfolio
+# Ivan Smiths, React developer highly focused on UI/UX Design with 3 years of experience.
 
-Coded in plain Html, Css(Sass) and Javascript.
