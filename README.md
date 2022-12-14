@@ -14,4 +14,4 @@
 
 ### Works:
 - Currently employeed at <a href="https://www.s-v.de/">Scholz&Volkmer</a> as a Junior frontend developer;
-- Previously employeed at <a href="https://www.ideology.it/">Ideologx Creative Studio</a> as a UI/UX designer.
+- Previously employeed at <a href="https://www.ideology.it/">Ideology Creative Studio</a> as a UI/UX designer.
