@@ -10,7 +10,7 @@
 - 3 years of working experience (two as a UI/UX designer, one as a frontend developer);
 - Frontend developer, mainly coding with Next.js with an extensive use of Gsap for animations;
 - Born and raised in Italy, currently in Wiesbaden;
-- Checkout <a href="https://www.ivansmiths.com/">my personal portfolio</a> for more infos about me.
+- Check <a href="https://www.ivansmiths.com/">my personal portfolio</a> for more infos about me.
 
 ### Works:
 - Currently employeed at <a href="https://www.s-v.de/">Scholz&Volkmer</a> as a Junior frontend developer;
