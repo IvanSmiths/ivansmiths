@@ -15,7 +15,3 @@
 ### Works:
 - Currently employeed at <a href="https://www.s-v.de/">Scholz&Volkmer</a> as a Junior frontend developer;
 - Previously employeed at <a href="https://www.ideology.it/">Ideology Creative Studio</a> as a UI/UX designer.
-
-### Nerdy stats:
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=IvanSmiths&theme=dark&border_radius=0)](https://git.io/streak-stats)
