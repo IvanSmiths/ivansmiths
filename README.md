@@ -13,6 +13,6 @@
 - Check <a href="https://www.ivansmiths.com/">my personal portfolio</a> for more infos about me.
 
 ### Works:
-- Currently employeed at <a href="https://www.cowen.com/">TD Cowen</a> as a UI/UX developer.
+- Currently employeed at <a href="https://www.cowen.com/">TD Cowen</a> as a frontend UI/UX developer.
 - Previously employeed at <a href="https://www.s-v.de/">Scholz&Volkmer</a> as a Junior frontend developer;
 - Previously employeed at <a href="https://www.ideology.it/">Ideology Creative Studio</a> as a UI/UX designer.
