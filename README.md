@@ -8,9 +8,9 @@
 
 ### About:
 - 3 years of working experience (2 as a UI/UX designer, 1 as a Frontend developer);
-- Frontend developer, mainly coding with Next.js with an extensive use of Gsap for animations;
-- Born and raised in Italy, currently in Wiesbaden;
-- Check <a href="https://www.ivansmiths.com/">my personal portfolio</a> for more infos about me.
+- Frontend developer, lately coding with Next.js with an extensive use of Gsap for animations;
+- Born and raised in Italy, currently in Wiesbaden(DE);
+- Check <a href="https://www.ivansmiths.com/">my personal portfolio</a> for more info about me.
 
 ### Works:
 - Currently employeed at <a href="https://www.cowen.com/">TD Cowen</a> as a Frontend UI/UX developer.
