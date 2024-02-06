@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="https://www.ivansmiths.com/logo.svg" height="70px" width="70px" />
   <h1>Ivan Smiths here.</h1>
   <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ivan-fabbri/">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
