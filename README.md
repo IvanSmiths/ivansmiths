@@ -6,10 +6,10 @@
 </div>
 
 ### About:
-- 3 years of working experience as a UI/UX Developer;
+- 3 years of working experience as a Fullstack Developer;
 - Check <a href="https://www.ivansmiths.com/">my personal portfolio</a> for more info about me.
 
 ### Works:
-- Previously employeed at <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/td-cowen">TD Cowen</a> as a Frontend UI/UX developer.
+- Previously employeed at <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/td-cowen">TD Cowen</a> as a Fullstack developer.
 - Previously employeed at <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/scholzvolkmer">Scholz&Volkmer</a> as a Frontend developer;
-- Previously employeed at <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/ideology-creative-studio">Ideology Creative Studio</a> as a UI/UX designer.
+- Previously employeed at <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/ideology-creative-studio">Ideology Creative Studio</a> as a Frontend developer and UI/UX designer.
